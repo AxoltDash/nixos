@@ -2,7 +2,9 @@
 
 This repository contains the personal NixOS configuration for Axolt. It includes various settings and packages to set up and maintain the system.
 
+![NixOS Logo](https://static-00.iconduck.com/assets.00/nixos-icon-2048x1776-8czr8nir.png)
 ## Installation ⚙️
+---
 You need to clone this repository to your system to use the configuration. You can do this by running the following command:
 ```shell
 git clone https://github.com/AxoltDash/nixos
