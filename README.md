@@ -1,3 +1,4 @@
+<div align="center">
 # Axolt's NixOS Configuration 🖥️
 
 This repository contains the personal NixOS configuration for Axolt. It includes various settings and packages to set up and maintain the system.
