@@ -1,6 +1,5 @@
 <div align="center">
 # Axolt's NixOS Configuration 🖥️
-
 This repository contains the personal NixOS configuration for Axolt. It includes various settings and packages to set up and maintain the system.
 
 ![NixOS Logo](https://static-00.iconduck.com/assets.00/nixos-icon-2048x1776-8czr8nir.png)
