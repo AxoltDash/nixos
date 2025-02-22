@@ -1,11 +1,8 @@
-<div align="center">
 # Axolt's NixOS Configuration 🖥️
-</div>
-
 This repository contains the personal NixOS configuration for Axolt. It includes various settings and packages to set up and maintain the system.
 
 <div align="center">
-    <img src="extrafiles/nixos.png" alt="Terminal Welcome" width="500"/>
+    <img src="extrafiles/nixos.png" alt="Terminal Welcome" width="100"/>
 </div>
 
 ## Installation ⚙️
