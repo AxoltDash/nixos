@@ -30,6 +30,7 @@
   # hardware.cpu.amd.updateMicrocode = true;
 
   # 🔋 Manejo de bateria
+  powerManagement.enable = true;
   services.tlp.enable = true;
 
   services.xserver.videoDrivers = [ "amdgpu" ];

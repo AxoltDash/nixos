@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Main-Git";
+  system.nixos.label = "BatteryChanges";
   # =======================
 
   imports =
