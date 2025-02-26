@@ -56,6 +56,9 @@
     steam-run
     steam-unwrapped
 
+    # GAMES =-----------------------------------=
+    _2048-in-terminal
+
     # SERVICES =--------------------------------=
     zip
     unzip
