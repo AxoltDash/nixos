@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "GitHubCLI";
+  system.nixos.label = "cmatrix-and-activateLinux";
   # =======================
 
   imports =
@@ -38,8 +38,12 @@
 
   # DESKTOP =---------------------------=
 
-  services.displayManager.ly.enable = true;
-
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      animation = "matrix";
+    };
+  };
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;

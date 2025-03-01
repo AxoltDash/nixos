@@ -76,6 +76,8 @@
     # MISC =------------------------------------=
     cava
     cbonsai
+    activate-linux
+    cmatrix
 
     # LANGUAGES =-------------------------------=
     # Haskell
