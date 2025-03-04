@@ -39,6 +39,7 @@
     nano
     lazygit
     gh # github cli
+    vscode
 
     # APPS =------------------------------------=
     kitty
@@ -48,6 +49,7 @@
     ranger
     discord
     obsidian
+    telegram-desktop
 
     # GAMING =----------------------------------=
     mangohud
@@ -63,7 +65,7 @@
     zip
     unzip
     lynx
-
+    
     # Bluethooth
     bluez
     bluez-tools

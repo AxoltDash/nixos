@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "cmatrix-and-activateLinux";
+  system.nixos.label = "vscode-AND--FX";
   # =======================
 
   imports =
@@ -90,8 +90,6 @@
   # Cup (Prints screens)
   services.printing.enable = true;
   
-
-
   # Steam configuration
   programs.steam = {
     enable = true;
