@@ -48,6 +48,7 @@
     enable = true;
     xwayland.enable = true;
   };
+  programs.hyprlock.enable = true;
   
   # Interacciones de escritorio
   xdg.portal.enable = true;
