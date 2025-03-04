@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "vscode-AND--FX";
+  system.nixos.label = "VideoDownloader";
   # =======================
 
   imports =

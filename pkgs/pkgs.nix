@@ -51,6 +51,9 @@
     obsidian
     telegram-desktop
 
+    # IMAGES & VIDEOS =-------------------------=
+    ytdownloader
+
     # GAMING =----------------------------------=
     mangohud
     protonup
