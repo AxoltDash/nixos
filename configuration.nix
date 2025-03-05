@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "VideoDownloader";
+  system.nixos.label = "LibreOffices";
   # =======================
 
   imports =
@@ -49,6 +49,10 @@
     xwayland.enable = true;
   };
   programs.hyprlock.enable = true;
+  security = {
+    polkit.enable = true;
+    pam.services.hyprlock = {};
+  };
   
   # Interacciones de escritorio
   xdg.portal.enable = true;

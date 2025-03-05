@@ -45,14 +45,17 @@
     kitty
     firefox
     pcmanfm
-    nsxiv
-    ranger
     discord
     obsidian
     telegram-desktop
+    libreoffice
+
+    # TERMINAL =--------------------------------=
+    ranger
 
     # IMAGES & VIDEOS =-------------------------=
     ytdownloader
+    nsxiv
 
     # GAMING =----------------------------------=
     mangohud
@@ -63,7 +66,7 @@
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
-
+    
     # SERVICES =--------------------------------=
     zip
     unzip
