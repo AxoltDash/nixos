@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "LibreOffices";
+  system.nixos.label = "dwarf-fortress";
   # =======================
 
   imports =
