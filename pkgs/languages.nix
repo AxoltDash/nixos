@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     # HASKELL =--------------------------------=
     ghc
-    # haskell-language-server
+    haskell-language-server
     # Libraries
     cabal-install
     # haskellPackages.minisat-solver
