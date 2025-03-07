@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "dwarf-fortress";
+  system.nixos.label = "Haskell-MiniSAT";
   # =======================
 
   imports =
