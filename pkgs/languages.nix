@@ -8,7 +8,7 @@
     haskell-language-server
     # Libraries
     cabal-install
-    # haskellPackages.minisat-solver
+    haskellPackages.minisat-solver
     
     # PYTHON =---------------------------------=
     python3
