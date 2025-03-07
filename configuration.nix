@@ -17,7 +17,6 @@
       ./nixos/hardware-configuration.nix
       ./pkgs/pkgs.nix
       ./pkgs/gpu-cpu.nix # DESHABILITALO si no usas CPU AMD y RADEON GRAPHICS
-      ./pkgs/theme.nix
     ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -106,7 +105,6 @@
   programs.gamemode.enable = true;
 
   environment.sessionVariables = {
-    # Steam
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/axolt/.steam/root/compatibilitytools.d";
   };
 
@@ -136,6 +134,12 @@
     '';
     # connect xbox controller
   };
+  
+  # Fonts 
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.roboto-mono
+  ];
 
   # nix-ld (For gcup for haskell)
   # programs.nix-ld.enable = true;
