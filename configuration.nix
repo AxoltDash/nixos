@@ -17,6 +17,7 @@
       ./nixos/hardware-configuration.nix
       ./pkgs/pkgs.nix
       ./pkgs/gpu-cpu.nix # DESHABILITALO si no usas CPU AMD y RADEON GRAPHICS
+      ./pkgs/languages.nix
     ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

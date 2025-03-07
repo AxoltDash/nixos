@@ -88,36 +88,7 @@
     activate-linux
     cmatrix
 
-    # LANGUAGES =-------------------------------=
-    # Haskell
-    ghc
-    cabal-install
-    # Python
-    python3
-    # C 
-    gcc
-    # Rust
-    cargo
-    rust-analyzer
-    rustc
-    # JavaScript
-    nodejs
-    # Java
-    jdk
-    # Go
-    go
-    # PHP
-    php
-    phpPackages.composer
-    # Julia
-    julia
-
-    #Extra
-    luarocks # neovim plugins
-    lua
-    lua-language-server
-
-    #Extra
+    #EXTRA =------------------------------------=
     ripgrep # searching with a moddern grep for telescope
     fd # searching tool for telescope
     tree-sitter # Parser generator
