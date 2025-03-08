@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Haskell-MiniSAT";
+  system.nixos.label = "Haskell-CLEAN";
   # =======================
 
   imports =
