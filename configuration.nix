@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Haskell-CLEAN";
+  system.nixos.label = "Zathura";
   # =======================
 
   imports =

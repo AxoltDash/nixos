@@ -49,6 +49,7 @@
     obsidian
     telegram-desktop
     libreoffice
+    zathura
 
     # TERMINAL =--------------------------------=
     ranger
