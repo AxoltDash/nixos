@@ -33,7 +33,12 @@
     # Screen
     grim
     slurp
-    
+
+    # Recording
+    obs-studio
+    obs-studio-plugins.obs-vaapi
+    gst_all_1.gst-vaapi
+
     # CODING =----------------------------------=
     neovim
     nano

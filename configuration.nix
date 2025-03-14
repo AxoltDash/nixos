@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Zathura";
+  system.nixos.label = "OBS-STUDIO";
   # =======================
 
   imports =
