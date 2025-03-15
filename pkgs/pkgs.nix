@@ -72,7 +72,8 @@
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
-    minecraft
+    # minecraft
+    prismlauncher
     ferium
     
     # SERVICES =--------------------------------=
@@ -103,5 +104,4 @@
     xz # compression tool
   ];
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowBroken = true;
 }
