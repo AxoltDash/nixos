@@ -74,7 +74,7 @@
     _2048-in-terminal
     # minecraft
     prismlauncher
-    ferium
+    # ferium
     
     # SERVICES =--------------------------------=
     zip
