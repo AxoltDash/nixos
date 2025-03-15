@@ -72,6 +72,8 @@
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
+    minecraft
+    ferium
     
     # SERVICES =--------------------------------=
     zip
@@ -101,4 +103,5 @@
     xz # compression tool
   ];
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true;
 }

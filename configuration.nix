@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "OBS-STUDIO";
+  system.nixos.label = "MINECRAFT";
   # =======================
 
   imports =
