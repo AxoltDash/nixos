@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "MINECRAFT";
+  system.nixos.label = "UPDATE`";
   # =======================
 
   imports =
