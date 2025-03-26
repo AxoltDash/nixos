@@ -106,16 +106,26 @@
   # THEMES =------------------------------------------------=
   gtk = {
     enable = true;
-    
     theme = {
       package = pkgs.gruvbox-material-gtk-theme;
       name = "Gruvbox-Material-Dark";
+    };
+    iconTheme = {
+      package = gruvboxPlus;
+      name = "GruboxPlus";
     };
 
     #iconTheme = {
     #  package = pkgs.gruvbox-plus-icons;
     #  name = "Gruvbox-Plus-Dark"; 
     #};
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+    style.name = "adwaita-dark";
+    style.package = pkgs.adwaita-qt;
   };
 
   home.pointerCursor = {
