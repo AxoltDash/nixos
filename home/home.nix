@@ -110,10 +110,10 @@
       package = pkgs.gruvbox-material-gtk-theme;
       name = "Gruvbox-Material-Dark";
     };
-    iconTheme = {
-      package = gruvboxPlus;
-      name = "GruboxPlus";
-    };
+    # iconTheme = {
+    #   package = gruvboxPlus;
+    #   name = "GruvboxPlus";
+    # };
 
     #iconTheme = {
     #  package = pkgs.gruvbox-plus-icons;
