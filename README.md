@@ -28,6 +28,16 @@ sudo nixos-rebuild switch --flake nixos/
 This configuration is tailored to my personal needs and preferences. It may not work for you out of the box. You can use it as a reference or a starting point for your own configuration.
 Read the instructions/ folder for more information on how to install another thing out of the NixOS configuration.
 
+## To-Do List 📝
+- [ ] Add more configuration options from ./config folder, for example:
+  - [ ] Hyprland
+  - [ ] Waybar
+  - [ ] Rofi
+  - [ ] Kitty
+  - [ ] Neovim
+  - [ ] (AND MORE)
+- [ ] Modify the file order to make it easier to use in another computers, for example move touching config in another .nix file
+
 ## License 📜
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
