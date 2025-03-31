@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "QT5-THEME";
+  system.nixos.label = "ADDED_BRIGHTNESS_PERFORMANCE";
   # =======================
 
   imports =
