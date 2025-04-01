@@ -31,13 +31,7 @@
 
   # 🔋 Manejo de bateria
   powerManagement.enable = true;
-services.tlp = {
-  enable = true;
-  extraConfig = ''
-    RESTORE_BRIGHTNESS_ON_BAT=0
-    RESTORE_BRIGHTNESS_ON_AC=0
-  '';
-};
+  services.tlp.enable = true;
 
   services.xserver.videoDrivers = [ "amdgpu" ];
 }
