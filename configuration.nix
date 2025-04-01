@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "ADDED_BRIGHTNESS_PERFORMANCE";
+  system.nixos.label = "ZEN_BROWSER";
   # =======================
 
   imports =
