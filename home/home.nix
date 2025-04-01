@@ -73,16 +73,6 @@
     VISUAL = "nvim";
   };
 
-  # Hyprland =--------------------------------------------=
-  wayland.windowManager.hyprland = {
-   plugins = [
-      inputs.hyprgrass.packages.${pkgs.system}.default
-
-      # optional integration with pulse-audio, see examples/hyprgrass-pulse/README.md
-      inputs.hyprgrass.packages.${pkgs.system}.hyprgrass-pulse
-    ];
-  };
-
   # GIT =-------------------------------------------------=
   programs.git = {
     enable = true;
@@ -140,18 +130,6 @@
     x11.enable = true;
     gtk.enable = true;
   };
-  
-  # DEFAULT APPS =---------------------------------------=
-  xdg.mimeApps.defaultApplications = {
-    "text/plain" = [ "neovim.desktop" ];
-    "application/pdf" = [ "zathura.desktop" ];
-    "image/*" = [ "sxiv.desktop" ];
-    "video/png" = [ "mpv.desktop" ];
-    "video/jpg" = [ "mpv.desktop" ];
-    "video/*" = [ "mpv.desktop " ];
-  };
-
-  # SHCOOL =--------------------------------------------=
   
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

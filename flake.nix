@@ -13,10 +13,6 @@
 
     # Hyprgrass
     hyprland.url = "github:hyprwm/Hyprland";
-    hyprgrass = {
-      url = "github:horriblename/hyprgrass";
-      inputs.hyprland.follows = "hyprland"; # IMPORTANT
-    };
 
     # Zen Browser
     zen-browser.url = "github:0xc000022070/zen-browser-flake";

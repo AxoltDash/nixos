@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "ZEN_BROWSER";
+  system.nixos.label = "Cleaning";
   # =======================
 
   imports =
@@ -48,11 +48,11 @@
     enable = true;
     xwayland.enable = true;
   };
-  programs.hyprlock.enable = true;
-  security = {
-    polkit.enable = true;
-    pam.services.hyprlock = {};
-  };
+  # programs.hyprlock.enable = true;
+  # security = {
+  #   polkit.enable = true;
+  #   pam.services.hyprlock = {};
+  # };
   
   # Interacciones de escritorio
   xdg.portal.enable = true;
