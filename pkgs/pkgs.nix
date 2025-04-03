@@ -49,6 +49,7 @@
     # APPS =------------------------------------=
     kitty
     firefox
+    brave
     pcmanfm
     discord
     obsidian

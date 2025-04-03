@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Cleaning";
+  system.nixos.label = "Brave_Browser";
   # =======================
 
   imports =
