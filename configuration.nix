@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Brave_Browser";
+  system.nixos.label = "Firewall";
   # =======================
 
   imports =
@@ -35,6 +35,15 @@
   networking.hostName = "dash"; # hostname.
 
   time.timeZone = "America/Mexico_City";
+
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 80 443 8008 8009 ];
+    allowedUDPPorts = [ 1900 5353 ];
+    allowedUDPPortRanges = [
+      { from = 1; to = 65535; }
+    ];
+  };
 
   # DESKTOP =---------------------------=
 
