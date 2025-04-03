@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Firewall";
+  system.nixos.label = "GrivBoxIcons";
   # =======================
 
   imports =
@@ -57,11 +57,6 @@
     enable = true;
     xwayland.enable = true;
   };
-  # programs.hyprlock.enable = true;
-  # security = {
-  #   polkit.enable = true;
-  #   pam.services.hyprlock = {};
-  # };
   
   # Interacciones de escritorio
   xdg.portal.enable = true;
@@ -151,12 +146,13 @@
     nerd-fonts.roboto-mono
   ];
 
-  # nix-ld (For gcup for haskell)
-  # programs.nix-ld.enable = true;
-
   # PROGRAMS =--------------------------=
   environment.systemPackages = with pkgs; [
   ];
+
+
+
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -238,8 +234,6 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
   system.stateVersion = "24.11"; # Did you read the comment?
 
 }
