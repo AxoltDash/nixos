@@ -73,9 +73,7 @@
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
-    # minecraft
     prismlauncher
-    # ferium
     
     # SERVICES =--------------------------------=
     zip
