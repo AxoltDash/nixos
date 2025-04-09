@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "ZOOM-Metings;
+  system.nixos.label = "ZOOM-Metings";
   # =======================
 
   imports =
