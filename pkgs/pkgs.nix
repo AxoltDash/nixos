@@ -56,6 +56,7 @@
     telegram-desktop
     libreoffice
     zathura
+    zoom-us
 
     # TERMINAL =--------------------------------=
     ranger
