@@ -57,6 +57,7 @@
     libreoffice
     zathura
     zoom-us
+    arduino-ide
 
     # TERMINAL =--------------------------------=
     ranger

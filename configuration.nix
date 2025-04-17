@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "ZOOM-Metings";
+  system.nixos.label = "Arduino";
   # =======================
 
   imports =
@@ -78,7 +78,7 @@
   users.users.axolt = {
     isNormalUser = true;
     description = "Axolotl principal";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" ];
     shell = pkgs.bash;
     home = "/home/axolt";
   };  
@@ -145,6 +145,13 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.roboto-mono
   ];
+
+  # USB Arduino
+    services.udev.extraRules = ''
+    # Permisos para dispositivos seriales (Arduino, ESP, etc.)
+    KERNEL=="ttyUSB[0-9]*", MODE="0666"
+    KERNEL=="ttyACM[0-9]*", MODE="0666"
+  '';
 
   # PROGRAMS =--------------------------=
   environment.systemPackages = with pkgs; [
