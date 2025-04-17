@@ -17,5 +17,9 @@ Check if the font is installed with:
 ```shell
 fc-list | grep "RainWorldSymbols
 ```
-
+### Install Notifications for Hyperland
+You need my .config installation (I need put their in this repo or on another repo):
+```shell
+chmod +x ~/.config/hypr/scripts/battery_notify.sh 
+```
 
