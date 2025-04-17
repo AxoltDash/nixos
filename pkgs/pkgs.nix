@@ -47,20 +47,33 @@
     vscode
 
     # APPS =------------------------------------=
+    # Terminal
     kitty
+
+    # Browsers
     firefox
     brave
+
+    # Files
     pcmanfm
-    discord
-    obsidian
-    telegram-desktop
-    libreoffice
     zathura
+    libreoffice
+    
+    # Utilities
+    qalculate-gtk
+    obsidian
+    
+    # Metting
+    discord
+    telegram-desktop
     zoom-us
+
+    # Etc
     arduino-ide
 
     # TERMINAL =--------------------------------=
     ranger
+    peaclock
 
     # IMAGES & VIDEOS =-------------------------=
     ytdownloader

@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Arduino";
+  system.nixos.label = "Utilities";
   # =======================
 
   imports =
