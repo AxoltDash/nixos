@@ -9,7 +9,7 @@
   # CHAGE LABEL! #
   ################
   # =======================
-  system.nixos.label = "Utilities";
+  system.nixos.label = "Latex";
   # =======================
 
   imports =

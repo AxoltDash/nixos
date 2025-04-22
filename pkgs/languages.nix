@@ -41,6 +41,9 @@
     lua
     lua-language-server
 
+    # LATEX =--------------------------------=
+    texlive.combined.scheme-full 
+
   ];
   nixpkgs.config.allowUnfree = true;
 }
