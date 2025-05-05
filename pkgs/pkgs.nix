@@ -85,6 +85,8 @@
     steam
     steam-run
     steam-unwrapped
+    lutris
+    dolphin-emu
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
