@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "LutrisAndDOLPHINEMULATOR";
+    system.nixos.label = "FlatPack";
     # =======================
 
     imports =
@@ -152,6 +152,10 @@
         KERNEL=="ttyUSB[0-9]*", MODE="0666"
         KERNEL=="ttyACM[0-9]*", MODE="0666"
     '';
+
+    # Flatpack
+    services.flatpak.enable = true;
+
 
     # PROGRAMS =--------------------------=
     environment.systemPackages = with pkgs; [
