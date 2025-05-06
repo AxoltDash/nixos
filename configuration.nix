@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "FlatPack";
+    system.nixos.label = "lua51-tiktoken";
     # =======================
 
     imports =
