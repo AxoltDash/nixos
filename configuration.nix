@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "lua51-tiktoken";
+    system.nixos.label = "lipstick";
     # =======================
 
     imports =
