@@ -40,6 +40,7 @@
     luarocks # neovim plugins
     lua
     lua-language-server
+    lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
 
     # LATEX =--------------------------------=
     texlive.combined.scheme-full 

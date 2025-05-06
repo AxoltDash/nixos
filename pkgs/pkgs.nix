@@ -118,7 +118,6 @@
     tree-sitter # Parser generator
     gnumake # manage non-source files to source
     xz # compression tool
-    lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
   ];
   nixpkgs.config.allowUnfree = true;
 }
