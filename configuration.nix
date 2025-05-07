@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "lipstick";
+    system.nixos.label = "Matrix-disable";
     # =======================
 
     imports =
@@ -27,8 +27,11 @@
     # BOOT =-----------------------------=
 
     boot.loader.systemd-boot.enable = true;
+    boot.loader.timeout = 1;
     boot.loader.efi.canTouchEfiVariables = true;
     
+    services.displayManager.ly.enable = true;
+
     # NETWORK =--------------------------=
 
     networking.networkmanager.enable = true;
@@ -47,12 +50,6 @@
 
     # DESKTOP =---------------------------=
 
-    services.displayManager.ly = {
-        enable = true;
-        settings = {
-            animation = "matrix";
-        };
-    };
     programs.hyprland = {
         enable = true;
         xwayland.enable = true;
