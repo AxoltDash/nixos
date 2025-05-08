@@ -18,10 +18,11 @@ Check if the font is installed with:
 fc-list | grep "RainWorldSymbols
 ```
 
-### Install Notifications for Hyperland
+### Install Scripts
 You need my .config installation (I need put their in this repo or on another repo):
 ```shell
-chmod +x ~/.config/hypr/scripts/battery_notify.sh 
+sudo chmod +x ~/.config/hypr/scripts/battery_notify.sh 
+sudo chmod +x ~/.config/waybar/scripts/waybar-blue-light-filter.sh
 ```
 
 ### Install trim-generattions.sh
