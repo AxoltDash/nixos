@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Hyprshade";
+    system.nixos.label = "Trim-generations";
     # =======================
 
     imports =
