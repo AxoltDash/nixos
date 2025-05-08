@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Matrix-disable";
+    system.nixos.label = "Hyprshade";
     # =======================
 
     imports =

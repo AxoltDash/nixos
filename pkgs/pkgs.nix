@@ -22,7 +22,8 @@
     rofi-wayland
     wl-clipboard
     brightnessctl
-    
+    hyprshade
+
     # Notifications
     dunst
     libnotify
