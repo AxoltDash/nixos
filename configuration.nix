@@ -161,15 +161,16 @@
     };
 
     # Deleting NixOS generations
-    systemd.services.trim-generations = {
-        description = "Trim old Nix generations";
-        wantedBy = [ "multi-user.target" ]; # Se ejecuta al inicio
-        serviceConfig = {
-            Type = "oneshot"; # Ejecuta una vez y termina
-            ExecStart = "/home/axolt/nixos/scripts/trim-generations.sh 15 30 system"; # Parámetros: <keepGens> <keepDays> <profile> # No olvides cambiar el nombre de usuario
-            User = "root";
-        };
-    };
+    boot.postBootCommands = ''
+    # Configura el PATH completo de NixOS
+    export PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:$PATH
+    
+    # Ejecuta el script con logging
+    echo "Ejecutando trim-generations.sh..." >&2
+    /run/current-system/sw/bin/bash /home/axolt/nixos/scripts/trim-generations.sh 15 30 system 2>&1 | tee -a /var/log/trim-generations.log || {
+      echo "Error en trim-generations.sh. Ver /var/log/trim-generations.log" >&2
+    }
+    '' ;
 
     # PROGRAMS =--------------------------=
     environment.systemPackages = with pkgs; [
