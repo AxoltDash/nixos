@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Trim-generations";
+    system.nixos.label = "Libreworlf";
     # =======================
 
     imports =
