@@ -160,6 +160,16 @@
         '';
     };
 
+    # Deleting NixOS generations
+    systemd.services.trim-generations = {
+        description = "Trim old Nix generations";
+        wantedBy = [ "multi-user.target" ]; # Se ejecuta al inicio
+        serviceConfig = {
+            Type = "oneshot"; # Ejecuta una vez y termina
+            ExecStart = "/home/axolt/nixos/scripts/trim-generations.sh 15 30 system"; # Parámetros: <keepGens> <keepDays> <profile> # No olvides cambiar el nombre de usuario
+            User = "root";
+        };
+    };
 
     # PROGRAMS =--------------------------=
     environment.systemPackages = with pkgs; [

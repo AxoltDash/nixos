@@ -1,4 +1,4 @@
-
+# Insrtructions to install NixOS extras (Recommended)
 
 ### Add Proton-GE to Steam
 If you want to enable STEAM GE-PROTON, you can do so by following the steps below:
@@ -17,9 +17,17 @@ Check if the font is installed with:
 ```shell
 fc-list | grep "RainWorldSymbols
 ```
+
 ### Install Notifications for Hyperland
 You need my .config installation (I need put their in this repo or on another repo):
 ```shell
 chmod +x ~/.config/hypr/scripts/battery_notify.sh 
 ```
+
+### Install trim-generattions.sh
+This scripts helps you to delete the old generations of your system. Its configurable, but you need to change te name of the path script (this is on `configuration.nix`). Before you need to give its permissions:
+```shell
+sudo chmod +x /home/axolt/nixos/scripts/trim-generations.sh
+```
+Now, this script is ready to use. It automatically delete the old generations of your system and it's running thanks to `configuration.nix`.
 
