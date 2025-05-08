@@ -54,7 +54,6 @@
     # Browsers
     firefox
     brave
-    librewolf
 
     # Files
     pcmanfm

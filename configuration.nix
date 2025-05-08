@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Libreworlf";
+    system.nixos.label = "Deleted-Libreworlf";
     # =======================
 
     imports =
