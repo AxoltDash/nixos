@@ -69,6 +69,12 @@
     telegram-desktop
     zoom-us
 
+    # Desing
+    kdePackages.kdenlive
+    gimp
+    inkscape
+    krita
+
     # Etc
     arduino-ide
 

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Deleted-Libreworlf";
+    system.nixos.label = "Graphic-Apps";
     # =======================
 
     imports =
