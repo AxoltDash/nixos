@@ -24,7 +24,8 @@ sudo nix-env --delete-generations old --profile /nix/var/nix/profiles/system
 ### Garbage
 This is after delete the generations, and you need execute SUDO for the system and without sudo for the user
 ```shell
-sudo nix-collect-garbage -d
+sudo nix-collect-garbage -d  # Borra versiones no utilizadas
+sudo nix-store --optimise   # Reduce el espacio duplicado
 ```
 #### Clear Hystory
 ```shell
