@@ -16,7 +16,7 @@
         [ # Include the results of the hardware scan.
             ./nixos/hardware-configuration.nix # ASEGURATE DE COPIAR TU PROPIO ARCHIVO DE /etc/nixos/hardware-configuration.nix
             ./pkgs/pkgs.nix
-            ./pkgs/harware.nix # CREA UN ARCHIVO DE HARWARE, EN ESTE DEBES DE COLOCAR LOS DRIVERS EXCLUSIVOS DE TU PC Y EL NAME DEL DISPOSITIVO CON HOSTNAME
+            ./pkgs/hardware.nix # CREA UN ARCHIVO DE HARWARE, EN ESTE DEBES DE COLOCAR LOS DRIVERS EXCLUSIVOS DE TU PC Y EL NAME DEL DISPOSITIVO CON HOSTNAME
             ./pkgs/languages.nix
         ];
     
