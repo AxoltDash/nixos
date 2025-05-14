@@ -14,9 +14,9 @@
 
     imports =
         [ # Include the results of the hardware scan.
-            ./nixos/hardware-configuration.nix
+            ./nixos/hardware-configuration.nix # ASEGURATE DE COPIAR TU PROPIO ARCHIVO DE /etc/nixos/hardware-configuration.nix
             ./pkgs/pkgs.nix
-            ./pkgs/gpu-cpu.nix # DESHABILITALO si no usas CPU AMD y RADEON GRAPHICS
+            ./pkgs/harware.nix # CREA UN ARCHIVO DE HARWARE, EN ESTE DEBES DE COLOCAR LOS DRIVERS EXCLUSIVOS DE TU PC Y EL NAME DEL DISPOSITIVO CON HOSTNAME
             ./pkgs/languages.nix
         ];
     
@@ -35,7 +35,6 @@
     # NETWORK =--------------------------=
 
     networking.networkmanager.enable = true;
-    networking.hostName = "dash"; # hostname.
 
     time.timeZone = "America/Mexico_City";
 
