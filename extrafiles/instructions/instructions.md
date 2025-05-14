@@ -32,3 +32,9 @@ sudo chmod +x /home/axolt/nixos/scripts/trim-generations.sh
 ```
 Now, this script is ready to use. It automatically delete the old generations of your system and it's running thanks to `configuration.nix`.
 
+
+### Note if you copy hardware-configuration.nix
+You need to change the own:
+```shell
+sudo chown -R axolt:users /home/axolt/nixos/hardware-configuration.nix
+```
