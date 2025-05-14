@@ -1,0 +1,2 @@
+pkgs/hardware.nix
+nixos/hardware-configuration.nix
