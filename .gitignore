@@ -1,2 +1,2 @@
-pkgs/gpu-cpu.nix
+pkgs/hardware.nix
 nixos/hardware-configuration.nix
