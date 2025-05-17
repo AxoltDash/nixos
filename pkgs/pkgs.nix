@@ -59,6 +59,7 @@
     pcmanfm
     zathura
     libreoffice
+	vlc
     
     # Utilities
     qalculate-gtk

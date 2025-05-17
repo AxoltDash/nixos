@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "GruvBox";
+    system.nixos.label = "VLC";
     # =======================
 
     imports =
