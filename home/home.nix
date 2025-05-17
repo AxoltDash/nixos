@@ -99,8 +99,8 @@
     gtk = {
         enable = true;
         theme = {
-            package = pkgs.gruvbox-material-gtk-theme;
-            name = "Gruvbox-Material-Dark";
+            package = pkgs.gruvbox-gtk-theme;
+            name = "Gruvbox-Dark";
         };
         iconTheme = {
             package = pkgs.gruvbox-material-gtk-theme;

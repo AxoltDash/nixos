@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Moving";
+    system.nixos.label = "GruvBox";
     # =======================
 
     imports =
