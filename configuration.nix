@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "VLC";
+    system.nixos.label = "ZSH";
     # =======================
 
     imports =
@@ -75,7 +75,7 @@
         isNormalUser = true;
         description = "Axolotl principal";
         extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" ];
-        shell = pkgs.bash;
+        shell = pkgs.zsh;
         home = "/home/axolt";
     };  
 
@@ -131,6 +131,9 @@
             flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         '';
     };
+
+	# Enable ZSH
+	programs.zsh.enable = true;
 
     # Deleting NixOS generations
     boot.postBootCommands = ''
