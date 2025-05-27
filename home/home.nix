@@ -82,37 +82,24 @@
 		enableCompletion = true;
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
-
+		
 		oh-my-zsh = {
 			enable = true;
-			theme = "";
 			plugins = [
 				"git"
 				"sudo"
 				"extract"
 				"colored-man-pages"
-				"sudo"
-				"history-substring-search"
 				"web-search"
 			];
 		};
 
 		initContent = ''
-			source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-			[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+			source ~/.p10k.zsh
 		''; 
 	
 		plugins = [
-			{ # Nix Shell plugin (Initialed the nix-shell automatically)
-				name = "zsh-nix-shell";
-				file = "nix-shell.plugin.zsh";
-				src = pkgs.fetchFromGitHub {
-					owner = "chisui";
-					repo = "zsh-nix-shell";
-					rev = "v0.8.0";  # Revisa la última versión en GitHub
-					sha256 = "sha256-Z6EYQdasvpl1P78poj9efnnLj7QQg13Me8x1Ryyw+dM=";
-				};
-			}
+			{name = "powerlevel10k";src = pkgs.zsh-powerlevel10k;file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";}
 		];
 
 		shellAliases = {
