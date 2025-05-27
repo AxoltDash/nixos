@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZEN-BROWSER";
+    system.nixos.label = "24.11-ULTIMATE-UPDATE";
     # =======================
 
     imports =
