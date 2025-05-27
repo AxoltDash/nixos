@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZSH-P10K";
+    system.nixos.label = "ZEN-BROWSER";
     # =======================
 
     imports =
