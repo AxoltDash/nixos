@@ -12,13 +12,13 @@
         };
 
         # Hyprgrass
-        hyprland.url = "github:hyprwm/Hyprland";
+		# hyprland.url = "github:hyprwm/Hyprland";
 
         # Zen Browser
-        zen-browser.url = "github:0xc000022070/zen-browser-flake";
+		# zen-browser.url = "github:0xc000022070/zen-browser-flake";
     };
 
-    outputs = { nixpkgs, home-manager, zen-browser, ... } @ inputs:
+    outputs = { nixpkgs, home-manager, ... } @ inputs:
         let
             system = "x86_64-linux";  # Cambia esto si usas otra arquitectura (ej. "aarch64-linux")
             pkgs = import nixpkgs {

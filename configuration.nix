@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "24.11-ULTIMATE-UPDATE";
+    system.nixos.label = "25.05-UPDATE";
     # =======================
 
     imports =
@@ -234,6 +234,6 @@
     #   useXkbConfig = true; # use xkb.options in tty.
     # };
 
-    system.stateVersion = "24.11"; # Did you read the comment?
+    system.stateVersion = "25.05"; # Did you read the comment?
 
 }
