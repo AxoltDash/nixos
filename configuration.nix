@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZEN-Browser-XDG-OPEN";
+    system.nixos.label = "Monocraft";
     # =======================
 
     imports =
@@ -113,7 +113,9 @@
     fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
         nerd-fonts.roboto-mono
+		monocraft
     ];
+
 
     # USB Arduino
     services.udev.extraRules = ''
