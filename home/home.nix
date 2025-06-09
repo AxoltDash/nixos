@@ -71,10 +71,34 @@
     #  /etc/profiles/per-user/axolt/etc/profile.d/hm-session-vars.sh
     #
 
+	# SESSION VARIABLES =--------------------------------------
     home.sessionVariables = {
         EDITOR = "nvim";
         VISUAL = "nvim";
     };
+
+	xdg.mimeApps = {
+		enable = true;
+		defaultApplications = {
+			# ZEN BROWSER =---=
+			"text/html" = "app.zen_browser.zen.desktop";
+			"x-scheme-handler/http" = "app.zen_browser.zen.desktop";
+			"x-scheme-handler/https" = "app.zen_browser.zen.desktop";
+			"x-scheme-handler/about" = "app.zen_browser.zen.desktop";
+			"x-scheme-handler/unknown" = "app.zen_browser.zen.desktop";
+			"x-scheme-handler/chrome" = "app.zen_browser.zen.desktop";
+			"application/x-extension-htm" = "app.zen_browser.zen.desktop";
+			"application/x-extension-html" = "app.zen_browser.zen.desktop";
+			"application/x-extension-shtml" = "app.zen_browser.zen.desktop";
+			"application/x-extension-xhtml" = "app.zen_browser.zen.desktop";
+			"application/x-extension-xht" = "app.zen_browser.zen.desktop";
+			"application/xhtml+xml" = "app.zen_browser.zen.desktop"; 
+
+			# DISCORD =---=
+			"x-scheme-handler/discord-455712169795780630" = "discord-455712169795780630.desktop";
+
+		};
+	};
 
 	# ZSH =-------------------------------------------------=
 	programs.zsh = {
@@ -164,6 +188,8 @@
         x11.enable = true;
         gtk.enable = true;
     };
+
+	# HOME MANAGER =------------------------------------------
     
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
