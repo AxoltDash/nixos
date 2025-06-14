@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Monocraft";
+    system.nixos.label = "PcmanFM-ZSG-MIME";
     # =======================
 
     imports =
