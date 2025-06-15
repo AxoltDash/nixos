@@ -98,7 +98,7 @@
 			"x-scheme-handler/discord-455712169795780630" = "discord-455712169795780630.desktop";
 
 			# PCMANFM =---=
-			"inode/directory" = "pcmanfm.thunar";
+			"inode/directory" = "thunar.desktop";
 		};
 	};
 

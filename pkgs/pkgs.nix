@@ -56,7 +56,7 @@
     brave
 
     # Files
-	thunar
+	xfce.thunar
     zathura
     libreoffice
 	vlc
