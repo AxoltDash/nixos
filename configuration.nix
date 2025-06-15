@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "PcmanFM-ZSG-MIME";
+    system.nixos.label = "Thunar";
     # =======================
 
     imports =

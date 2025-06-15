@@ -56,7 +56,7 @@
     brave
 
     # Files
-    pcmanfm
+	thunar
     zathura
     libreoffice
 	vlc
