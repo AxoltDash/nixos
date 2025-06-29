@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Thunar";
+    system.nixos.label = "UPDATE";
     # =======================
 
     imports =
