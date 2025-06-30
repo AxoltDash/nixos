@@ -102,6 +102,16 @@
 		};
 	};
 
+	programs.brave = {
+		enable = true;
+		package = pkgs.writeShellScriptBin "brave" ''
+			exec ${pkgs.brave}/bin/brave \
+				--ozone-platform=wayland \
+				--enable-features=UseOzonePlatform \
+				"$@"
+		'';
+	};
+
 	# ZSH =-------------------------------------------------=
 	programs.zsh = {
 		enable = true;
