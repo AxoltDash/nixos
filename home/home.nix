@@ -103,10 +103,12 @@
 			# NXSIV =---=
 			"image/png"="nsxiv.desktop";
 			"image/jpeg"="nsxiv.desktop";
-			"image/gif"="nsxiv.desktop";
 			"image/webp"="nsxiv.desktop";
 			"image/bmp"="nsxiv.desktop";
 			"image/svg+xml"="nsxiv.desktop";
+
+			# VLC =---=
+			"image/gif"="vlc.desktop";
 		};
 	};
 
