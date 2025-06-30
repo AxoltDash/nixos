@@ -58,6 +58,9 @@
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
+	# Forzar Wayland
+	environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
     # SOUND =-----------------------------=
 
     security.rtkit.enable = true;
