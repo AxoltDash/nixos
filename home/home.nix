@@ -99,6 +99,14 @@
 
 			# PCMANFM =---=
 			"inode/directory" = "thunar.desktop";
+			
+			# NXSIV =---=
+			"image/png"="nsxiv.desktop";
+			"image/jpeg"="nsxiv.desktop";
+			"image/gif"="nsxiv.desktop";
+			"image/webp"="nsxiv.desktop";
+			"image/bmp"="nsxiv.desktop";
+			"image/svg+xml"="nsxiv.desktop";
 		};
 	};
 
@@ -199,6 +207,14 @@
         };
         x11.enable = true;
         gtk.enable = true;
+    };
+
+    xresources.properties = {
+      "Nsxiv.window.background" = "#121110";
+      "Nsxiv.window.foreground" = "#f2e5bc";
+      "Nsxiv.bar.background" = "#222222";
+      "Nsxiv.bar.foreground" = "#f2e5bc";
+      "Nsxiv.mark.foreground" = "#c9a554";
     };
 
 	# HOME MANAGER =------------------------------------------

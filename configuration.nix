@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Wayland-OZONE";
+    system.nixos.label = "NXSIV";
     # =======================
 
     imports =
