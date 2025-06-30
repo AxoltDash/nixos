@@ -106,9 +106,6 @@
 			"image/webp"="nsxiv.desktop";
 			"image/bmp"="nsxiv.desktop";
 			"image/svg+xml"="nsxiv.desktop";
-
-			# VLC =---=
-			"image/gif"="vlc.desktop";
 		};
 	};
 
