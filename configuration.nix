@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Brave Browser Wayland";
+    system.nixos.label = "Brave-Browser-Wayland";
     # =======================
 
     imports =
