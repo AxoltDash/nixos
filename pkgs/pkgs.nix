@@ -78,6 +78,7 @@
 
     # Etc
     arduino-ide
+	gnome-clocks
 
     # TERMINAL =--------------------------------=
     ranger

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "NXSIV";
+    system.nixos.label = "Gnome-Clock";
     # =======================
 
     imports =
