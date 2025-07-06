@@ -112,8 +112,6 @@
     blueman
 
     # SCHOOL =----------------------------------=
-    # Creacion de hardware
-    logisim-evolution
 
     # MISC =------------------------------------=
     cava
