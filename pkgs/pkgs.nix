@@ -95,7 +95,6 @@
     steam
     steam-run
     steam-unwrapped
-    lutris
     dolphin-emu
 
     # GAMES =-----------------------------------=
