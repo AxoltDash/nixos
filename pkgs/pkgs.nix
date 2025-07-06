@@ -50,6 +50,7 @@
     # APPS =------------------------------------=
     # Terminal
     kitty
+	cool-retro-term
 
     # Browsers
     firefox

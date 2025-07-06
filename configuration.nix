@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Gnome-Clock";
+    system.nixos.label = "Cool-Retro-Term";
     # =======================
 
     imports =
