@@ -139,6 +139,7 @@
 
 		initContent = ''
 			source ~/.p10k.zsh
+			zstyle ':completion:*' matcher-list 'r:|=l'
 		''; 
 	
 		plugins = [

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Cool-Retro-Term";
+    system.nixos.label = "ZSH-disble-autocomplete";
     # =======================
 
     imports =
