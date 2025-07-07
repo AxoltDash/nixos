@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZSH-disble-autocomplete";
+    system.nixos.label = "UPDATE";
     # =======================
 
     imports =
