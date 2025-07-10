@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE";
+    system.nixos.label = "MFCL3710CW";
     # =======================
 
     imports =

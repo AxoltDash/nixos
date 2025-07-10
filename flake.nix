@@ -21,6 +21,9 @@
     outputs = { nixpkgs, home-manager, ... } @ inputs:
         let
             system = "x86_64-linux";  # Cambia esto si usas otra arquitectura (ej. "aarch64-linux")
+			overlays = [
+				(import ./overlays/brother-mfcl3710cw.nix)
+			];
             pkgs = import nixpkgs {
                 inherit system;
                 config.allowUnfree = true;  # Permitir paquetes no libres
