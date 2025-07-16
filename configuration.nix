@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZSH-PATH-Cargo";
+    system.nixos.label = "UPDATE";
     # =======================
 
     imports =
