@@ -73,7 +73,6 @@
 
     # Desing
     kdePackages.kdenlive
-    gimp
     inkscape
     krita
 

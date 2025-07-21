@@ -43,7 +43,7 @@
     lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
 
     # LATEX =--------------------------------=
-    texlive.combined.scheme-full 
+	# texlive.combined.scheme-full 
 
   ];
   nixpkgs.config.allowUnfree = true;
