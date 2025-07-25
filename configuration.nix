@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "proton-firewall";
+    system.nixos.label = "wireguard";
     # =======================
 
     imports =

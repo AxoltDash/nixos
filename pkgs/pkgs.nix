@@ -132,6 +132,7 @@
     tree-sitter # Parser generator
     gnumake # manage non-source files to source
     xz # compression tool
+	wireguard-tools #VPN
   ];
   nixpkgs.config.allowUnfree = true;
 }
