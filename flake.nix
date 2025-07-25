@@ -39,6 +39,7 @@
                         home-manager.useUserPackages = true;
                         home-manager.users.axolt = import ./home/home.nix;
                         home-manager.extraSpecialArgs = { inherit inputs; system = "x86_64-linux"; };  # Agregar esta línea
+						home-manager.backupFileExtension = ".backup";
                     }
                 ];
             };
