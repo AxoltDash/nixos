@@ -2,12 +2,11 @@
 ### Flakes
 #### Rebuild the system
 ```shell
-sudo nixos-rebuild switch --flake /etc/nixos
-```
+sudo nixos-rebuild switch --flake```
 #### Update the system:
 ```shell
 sudo nix flake update /etc/nixos
-sudo nixos-rebuild switch --flake /etc/nixos
+sudo nixos-rebuild switch --flake
 ```
 
 ### Old generations

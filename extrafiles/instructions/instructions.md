@@ -36,7 +36,7 @@ Do not forget to change the owner of the file, because this file is owned by roo
 
 
 ### Installed FLATPAKS
-All packages arent installed by default (Because do'nt work with the Nixos Pkgs), you need to install them with flatpack:
+All packages arent installed by default (Because don't work with the Nixos Pkgs), you need to install them with flatpack:
 #### Zen browser
 ```shell
 flatpak install flathub app.zen_browser.zen
