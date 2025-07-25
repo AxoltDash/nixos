@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "wireguard";
+    system.nixos.label = "ProtonVPN-cli";
     # =======================
 
     imports =
