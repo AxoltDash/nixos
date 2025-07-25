@@ -112,6 +112,14 @@
 
     # SCHOOL =----------------------------------=
 
+
+	# PROTON =----------------------------------=
+	protonmail-desktop
+	protonmail-bridge
+	protonmail-bridge-gui
+	protonvpn-gui
+	protonvpn-cli
+
     # MISC =------------------------------------=
     cava
     cbonsai

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE-TEMPORAL";
+    system.nixos.label = "gnome-keyring";
     # =======================
 
     imports =
@@ -151,6 +151,9 @@
       echo "Error en trim-generations.sh. Ver /var/log/trim-generations.log" >&2
     }
     '' ;
+
+	# Gnome Keyring
+	services.gnome.gnome-keyring.enable = true;
 
     # PROGRAMS =--------------------------=
     environment.systemPackages = with pkgs; [
