@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ProtonVPN-cli";
+    system.nixos.label = "Proton-apps-cleaned";
     # =======================
 
     imports =

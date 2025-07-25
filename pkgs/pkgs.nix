@@ -114,11 +114,7 @@
 
 
 	# PROTON =----------------------------------=
-	protonmail-desktop
-	protonmail-bridge
-	protonmail-bridge-gui
 	protonvpn-gui
-	protonvpn-cli_2
 
     # MISC =------------------------------------=
     cava
