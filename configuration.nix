@@ -45,6 +45,7 @@
 		allowedUDPPortRanges = [
 			{ from = 1; to = 65535; }
 		];
+		checkReversePath = false;
 	};
 
     # DESKTOP =---------------------------=
