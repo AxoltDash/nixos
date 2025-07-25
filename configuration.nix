@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "gnome-keyring";
+    system.nixos.label = "proton-firewall";
     # =======================
 
     imports =
@@ -38,14 +38,14 @@
 
     time.timeZone = "America/Mexico_City";
 
-    networking.firewall = {
-        enable = true;
-        allowedTCPPorts = [ 80 443 8008 8009 ];
-        allowedUDPPorts = [ 1900 5353 ];
-        allowedUDPPortRanges = [
-            { from = 1; to = 65535; }
-        ];
-    };
+	networking.firewall = {
+		enable = true;
+		allowedTCPPorts = [ 80 443 8008 8009 443 7770 8443 ];
+		allowedUDPPorts = [ 1900 5353 80 51820 4569 1194 5060 ];
+		allowedUDPPortRanges = [
+			{ from = 1; to = 65535; }
+		];
+	};
 
     # DESKTOP =---------------------------=
 
