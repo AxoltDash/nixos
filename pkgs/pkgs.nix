@@ -118,7 +118,7 @@
 	protonmail-bridge
 	protonmail-bridge-gui
 	protonvpn-gui
-	protonvpn-cli
+	protonvpn-cli_2
 
     # MISC =------------------------------------=
     cava
