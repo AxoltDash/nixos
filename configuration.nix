@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Proton-apps-cleaned";
+    system.nixos.label = "UPDATE-2025-07-29";
     # =======================
 
     imports =
