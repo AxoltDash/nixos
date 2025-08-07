@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE-UNSTABLE-2025-07-31";
+    system.nixos.label = "TETRIS";
     # =======================
 
     imports =

@@ -99,6 +99,7 @@
     # GAMES =-----------------------------------=
     _2048-in-terminal
     prismlauncher
+	tetris
     
     # SERVICES =--------------------------------=
     zip
