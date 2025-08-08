@@ -14,4 +14,4 @@ done
 
 echo "Server READY. Conecting by SSH..."
 
-ssh -i ~/.ssh/server axolt@$SERVER
+ssh -i ~/.ssh/dash-server axolt@$SERVER
