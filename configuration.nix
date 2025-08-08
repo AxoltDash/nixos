@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "TETRIS";
+    system.nixos.label = "SSH-server-connet";
     # =======================
 
     imports =
