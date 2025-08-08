@@ -26,6 +26,11 @@ sudo chmod +x /home/axolt/nixos/scripts/trim-generations.sh
 ```
 Now, this script is ready to use. It automatically delete the old generations of your system and it's running thanks to `configuration.nix`.
 
+### Install my own server ssh waiter
+If you want to use my own server ssh waiter, you need to chmod the next script:
+```shell
+sudo chmod +x /home/axolt/nixos/scripts/server.sh
+```
 
 ### Hardware-configuration.nix
 All machine have a different hardware configuration, so you need to copy the `hardware-configuration.nix` file from your computer. This file is located in `/etc/nixos/hardware-configuration.nix`. When you copy this file, need to paste it in the path of this git repo, In mi case is:

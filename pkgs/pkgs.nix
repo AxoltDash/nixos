@@ -122,6 +122,9 @@
     cbonsai
     activate-linux
     cmatrix
+	
+	# SERVER =----------------------------------=
+	wakeonlan
 
     #EXTRA =------------------------------------=
     ripgrep # searching with a moddern grep for telescope

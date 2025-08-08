@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ZSH-alaises-update";
+    system.nixos.label = "wakeonlan";
     # =======================
 
     imports =
