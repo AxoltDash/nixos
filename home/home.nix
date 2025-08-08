@@ -106,6 +106,9 @@
 			"image/webp"="nsxiv.desktop";
 			"image/bmp"="nsxiv.desktop";
 			"image/svg+xml"="nsxiv.desktop";
+
+			# PDF ZARTHURA =---=
+			"application/pdf"="zathura.desktop";
 		};
 	};
 
