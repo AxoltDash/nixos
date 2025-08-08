@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "SSH-server-connet";
+    system.nixos.label = "ZSH-alaises-update";
     # =======================
 
     imports =

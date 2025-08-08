@@ -152,6 +152,7 @@
 
 		shellAliases = {
 			update = "sudo nixos-rebuild switch --flake ~/nixos";
+			update-flake = "nix flake update --flake ~/nixos";
 			connect = "ssh axolt@192.168.101.200";
 		};
 	};
