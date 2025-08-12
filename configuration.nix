@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Docker";
+    system.nixos.label = "DBeaver";
     # =======================
 
     imports =

@@ -112,7 +112,7 @@
     blueman
 
     # SCHOOL =----------------------------------=
-
+	dbeaver-bin
 
 	# PROTON =----------------------------------=
 	protonvpn-gui
