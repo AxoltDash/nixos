@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "wakeonlan";
+    system.nixos.label = "Docker";
     # =======================
 
     imports =
@@ -78,7 +78,7 @@
     users.users.axolt = {
         isNormalUser = true;
         description = "Axolotl principal";
-        extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" ];
+        extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" ];
         shell = pkgs.zsh;
         home = "/home/axolt";
     };  
@@ -90,6 +90,11 @@
     
     # == APPS CONFIGURATION ========================================
 
+	# Docker
+	virtualisation.docker = {
+		enable = true;
+	};
+     	
     # File manager PCMANFM autoMounting
     services.gvfs.enable = true;
 
