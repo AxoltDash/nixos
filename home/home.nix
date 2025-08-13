@@ -109,7 +109,7 @@
 			"image/svg+xml"="nsxiv.desktop";
 
 			# PDF ZARTHURA =---=
-			"application/pdf"="zathura.desktop";
+			"application/pdf"="org.pwnt.zathura.desktop";
 		};
 	};
 
