@@ -98,7 +98,8 @@
 			"x-scheme-handler/discord-455712169795780630" = "discord-455712169795780630.desktop";
 
 			# PCMANFM =---=
-			"inode/directory" = "thunar.desktop";
+			#"inode/directory" = "thunar.desktop";
+			"inode/directory" = "org.gnome.Nautilus.desktop";
 			
 			# NXSIV =---=
 			"image/png"="nsxiv.desktop";

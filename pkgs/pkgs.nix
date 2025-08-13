@@ -58,6 +58,7 @@
 
     # Files
 	xfce.thunar
+	nautilus
     zathura
     libreoffice
 	vlc

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "DBeaver";
+    system.nixos.label = "Nautilus";
     # =======================
 
     imports =
