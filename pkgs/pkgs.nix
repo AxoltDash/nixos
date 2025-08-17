@@ -66,7 +66,8 @@
     # Utilities
     qalculate-gtk
     obsidian
-    
+    anki
+
     # Metting
     discord
     telegram-desktop
