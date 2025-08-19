@@ -79,6 +79,10 @@
 
 	xdg.mimeApps = {
 		enable = true;
+		associations.added = {
+			"x-scheme-handler/tg" = "org.telegram.desktop.desktop;";
+			"x-scheme-handler/tonsite" = "org.telegram.desktop.desktop;";
+		};
 		defaultApplications = {
 			# ZEN BROWSER =---=
 			"text/html" = "app.zen_browser.zen.desktop";

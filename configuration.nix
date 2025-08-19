@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Anki";
+    system.nixos.label = "telegram-mime-apps";
     # =======================
 
     imports =
