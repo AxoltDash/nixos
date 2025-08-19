@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "telegram-mime-apps";
+    system.nixos.label = "LATEX";
     # =======================
 
     imports =
