@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "LATEX";
+    system.nixos.label = "OpenMPI";
     # =======================
 
     imports =
