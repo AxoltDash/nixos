@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "OpenMPI";
+    system.nixos.label = "DeleteScriptDeletingOldGenerations";
     # =======================
 
     imports =
@@ -145,18 +145,6 @@
 
 	# Enable ZSH
 	programs.zsh.enable = true;
-
-    # Deleting NixOS generations
-    boot.postBootCommands = ''
-    # Configura el PATH completo de NixOS
-    export PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:$PATH
-    
-    # Ejecuta el script con logging
-    echo "Ejecutando trim-generations.sh..." >&2
-    /run/current-system/sw/bin/bash /home/axolt/nixos/scripts/trim-generations.sh 15 30 system 2>&1 | tee -a /var/log/trim-generations.log || {
-      echo "Error en trim-generations.sh. Ver /var/log/trim-generations.log" >&2
-    }
-    '' ;
 
 	# Gnome Keyring
 	services.gnome.gnome-keyring.enable = true;
