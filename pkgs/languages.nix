@@ -44,10 +44,6 @@
 
     # LATEX =--------------------------------=
 	texlive.combined.scheme-full 
-
-	# Distributed Computing =----------------=
-	mpi
-
   ];
   nixpkgs.config.allowUnfree = true;
 }
