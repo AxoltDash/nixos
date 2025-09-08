@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE-2025-09-08";
+    system.nixos.label = "wireplumber";
     # =======================
 
     imports =
@@ -71,6 +71,7 @@
         alsa.support32Bit = true;
         pulse.enable = true;
         jack.enable = true;
+		wireplumber.enable = true;
     };
 
     # USERS =----------------------------=
