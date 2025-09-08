@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "MPI-CC";
+    system.nixos.label = "Okular";
     # =======================
 
     imports =

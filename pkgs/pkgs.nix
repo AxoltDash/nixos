@@ -57,11 +57,11 @@
     brave
 
     # Files
-	xfce.thunar
 	nautilus
     zathura
     libreoffice
 	vlc
+	kdePackages.okular
     
     # Utilities
     qalculate-gtk
