@@ -62,18 +62,6 @@
 	# Forzar Wayland
 	environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-    # SOUND =-----------------------------=
-
-    security.rtkit.enable = true;
-    services.pipewire = {
-        enable = true;
-        alsa.enable = true;
-        alsa.support32Bit = true;
-        pulse.enable = true;
-        jack.enable = true;
-		wireplumber.enable = true;
-    };
-
     # USERS =----------------------------=
 
     users.users.axolt = {

@@ -35,7 +35,8 @@
 
     services.xserver.videoDrivers = [ "amdgpu" ];
 
-    # Enable Bluetooth
+    # BLUETOOTH =-------------------------=
+
     hardware.bluetooth = {
         enable = true;
         powerOnBoot = true;
@@ -52,6 +53,26 @@
     };
     services.blueman.enable = true; 
     hardware.xpadneo.enable = true; # Enable the xpadneo driver for Xbox One wireless controllers
+
+    # SOUND =-----------------------------=
+
+    security.rtkit.enable = true;
+    services.pipewire = {
+        enable = true;
+        alsa.enable = true;
+        alsa.support32Bit = true;
+        pulse.enable = true;
+        jack.enable = true;
+		wireplumber.enable = true;
+		wireplumber.extraConfig.bluetoothEnhancements = {
+			"monitor.bluez.properties" = {
+				"bluez5.enable-sbc-xq" = true;		# mejor calidad que SBC
+				"bluez5.enable-msbc" = true;     	# mejor calidad en llamadas
+				"bluez5.enable-hw-volume" = true;	# control de volumen nativo
+				"bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
+			};
+		};
+    };
 
     # Botting
     boot = {
