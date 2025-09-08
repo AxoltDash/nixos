@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Okular";
+    system.nixos.label = "UPDATE-2025-09-08";
     # =======================
 
     imports =
