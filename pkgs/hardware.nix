@@ -2,7 +2,6 @@
 
 {
     # 🔥 Habilitar el driver AMDGPU (gráficos integrados)
-    # services.xserver.videoDrivers = [ "amdgpu" ];
     hardware = {
         graphics = {
             enable = true;
@@ -23,7 +22,6 @@
         mesa-demos  # Herramientas para probar OpenGL
         vulkan-tools  # Herramientas Vulkan
         vulkan-validation-layers
-        # blender-hip
     ];
     
     # 💻 Cpu
