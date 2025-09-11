@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE-2025-08-23";
+    system.nixos.label = "Removed_Firefox";
     # =======================
 
     imports =
