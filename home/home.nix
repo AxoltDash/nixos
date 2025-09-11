@@ -163,26 +163,7 @@
 		};
 	};
 
-    # GIT =-------------------------------------------------=
-    programs.git = {
-        enable = true;
-        userName = "AxoltDash";
-        userEmail = "darshan@ciencias.unam.mx";
-        extraConfig = {
-            init.defaultBranch = "main";
-        };
-    };
-
-    programs.ssh = {
-        enable = true;
-        matchBlocks = {
-            "github.com" = {
-                hostname = "github.com";
-                user = "git";
-                identityFile = "~/.ssh/id_ed25519";
-            };
-        };
-    };   
+  
 
     # THEMES =------------------------------------------------=
     gtk = {
