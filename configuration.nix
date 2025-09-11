@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "wireplumber";
+    system.nixos.label = "Removed_Firefox";
     # =======================
 
     imports =

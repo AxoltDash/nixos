@@ -53,7 +53,6 @@
 	cool-retro-term
 
     # Browsers
-    firefox
     brave
 
     # Files
