@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "TYPST";
+    system.nixos.label = "UPDATE-2025-09-13";
     # =======================
 
     imports =
