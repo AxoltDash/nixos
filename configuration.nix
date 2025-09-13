@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE-2025-09-13";
+    system.nixos.label = "Axolt_user_label_removed";
     # =======================
 
     imports =
@@ -66,7 +66,7 @@
 
     users.users.axolt = {
         isNormalUser = true;
-        description = "Axolotl principal";
+		#description = "Axolotl principal";
         extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" ];
         shell = pkgs.zsh;
         home = "/home/axolt";
