@@ -47,6 +47,8 @@
 
 	# TYPST =--------------------------------=
 	typst
+	tinymist
+	websocat
   ];
   nixpkgs.config.allowUnfree = true;
 }
