@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Removed_Firefox";
+    system.nixos.label = "TYPST";
     # =======================
 
     imports =

@@ -44,6 +44,9 @@
 
     # LATEX =--------------------------------=
 	texlive.combined.scheme-full 
+
+	# TYPST =--------------------------------=
+	typst
   ];
   nixpkgs.config.allowUnfree = true;
 }
