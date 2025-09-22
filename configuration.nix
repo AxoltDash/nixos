@@ -81,7 +81,8 @@
 
 	# Docker
 	virtualisation.docker = {
-		enable = false;
+		enable = true;
+		enableOnBoot = false;
 	};
      	
     # File manager PCMANFM autoMounting
