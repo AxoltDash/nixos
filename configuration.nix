@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "NetworkManager_wait_online";
+    system.nixos.label = "docker_autostart_disable";
     # =======================
 
     imports =
@@ -81,7 +81,7 @@
 
 	# Docker
 	virtualisation.docker = {
-		enable = true;
+		enable = false;
 	};
      	
     # File manager PCMANFM autoMounting
