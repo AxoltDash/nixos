@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Axolt_user_label_removed";
+    system.nixos.label = "NetworkManager_wait_online";
     # =======================
 
     imports =
@@ -47,6 +47,7 @@
 		];
 		checkReversePath = false;
 	};
+	systemd.services.NetworkManager-wait-online.enable = false;
 
     # DESKTOP =---------------------------=
 
