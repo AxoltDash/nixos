@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "docker_autostart_disable";
+    system.nixos.label = "UPDATE20251002";
     # =======================
 
     imports =
