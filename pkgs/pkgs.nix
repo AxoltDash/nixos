@@ -34,6 +34,7 @@
     # Screen
     grim
     slurp
+	tesseract
 
     # Recording
     obs-studio
