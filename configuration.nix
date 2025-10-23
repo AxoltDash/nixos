@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Tesseract";
+    system.nixos.label = "UPDATE20251023";
     # =======================
 
     imports =
