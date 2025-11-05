@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE20251023";
+    system.nixos.label = "UPDATE20251104";
     # =======================
 
     imports =
