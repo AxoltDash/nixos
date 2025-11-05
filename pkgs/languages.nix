@@ -37,7 +37,8 @@
     julia
 
     # LUA =------------------------------------=
-    luarocks # neovim plugins
+	# luarocks # neovim plugins
+	lua51Packages.luarocks # 5.1 version
     lua
     lua-language-server
     lua51Packages.tiktoken_core # Tokenizer for NVIM LUA

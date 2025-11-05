@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "UPDATE20251104";
+    system.nixos.label = "LuaRocks";
     # =======================
 
     imports =
