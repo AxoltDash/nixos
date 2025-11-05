@@ -97,7 +97,7 @@
     steam
     steam-run
     steam-unwrapped
-    dolphin-emu
+		# dolphin-emu
 
     # GAMES =-----------------------------------=
     _2048-in-terminal
