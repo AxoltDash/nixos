@@ -86,6 +86,7 @@
     # TERMINAL =--------------------------------=
     ranger
     peaclock
+	yazi
 
     # IMAGES & VIDEOS =-------------------------=
     ytdownloader

@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "LuaRocks";
+    system.nixos.label = "Yazi";
     # =======================
 
     imports =
