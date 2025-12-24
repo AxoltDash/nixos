@@ -55,7 +55,7 @@
 
     # Browsers
     brave
-	firefox
+	# firefox
 
     # Files
 	nautilus

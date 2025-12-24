@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Yazi";
+    system.nixos.label = "removed-firefox";
     # =======================
 
     imports =
