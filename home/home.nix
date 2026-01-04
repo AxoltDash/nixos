@@ -166,9 +166,9 @@
 	# GIT =-------------------------------------------------=
     programs.git = {
         enable = true;
-        userName = "AxoltDash";
-        userEmail = "darshan@ciencias.unam.mx";
-        extraConfig = {
+        user.name = "AxoltDash";
+        user.email = "darshan@ciencias.unam.mx";
+        settings = {
             init.defaultBranch = "main";
         };
     };
