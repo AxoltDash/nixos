@@ -166,11 +166,11 @@
 	# GIT =-------------------------------------------------=
     programs.git = {
         enable = true;
-        user.name = "AxoltDash";
-        user.email = "darshan@ciencias.unam.mx";
         settings = {
             init.defaultBranch = "main";
-        };
+			user.name = "AxoltDash";
+			user.email = "darshan@ciencias.unam.mx";
+		};
     };
 
     programs.ssh = {
