@@ -94,7 +94,7 @@
 
     # GAMING =----------------------------------=
     mangohud
-    protonup
+    protonup-ng
     steam
     steam-run
     steam-unwrapped
