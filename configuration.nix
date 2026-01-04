@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Nixos-25.11";
+    system.nixos.label = "Nixos2511";
     # =======================
 
     imports =

@@ -9,10 +9,10 @@
             extraPackages = with pkgs; [ amdvlk ];
             extraPackages32 = with pkgs; [ driversi686Linux.amdvlk ];
         };
-        amdgpu.amdvlk = {
-            enable = true;
-            support32Bit.enable = true;
-        };
+        # amdgpu.amdvlk = {
+        #     enable = true;
+        #     support32Bit.enable = true;
+        # };
     };
 
     # 🖥️ Mesa y Vulkan para mejor compatibilidad gráfica
