@@ -19,7 +19,7 @@
     # DESKTOP =---------------------------------=
     waybar
     hyprpaper
-    rofi-wayland
+    rofi
     wl-clipboard
     brightnessctl
     hyprshade
