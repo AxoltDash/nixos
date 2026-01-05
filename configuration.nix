@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Nixos2511";
+    system.nixos.label = "ly-settgins";
     # =======================
 
     imports =
@@ -31,6 +31,14 @@
     boot.loader.efi.canTouchEfiVariables = true;
     
     services.displayManager.ly.enable = true;
+	services.displayManager.ly.settings = {
+		battery_id = "BAT1";
+		brightness_down_cmd = "/run/current-system/sw/bin/brightnessctl -q -n s 10%-";
+		brightness_down_key = "F3";
+		brightness_up_cmd = "/run/current-system/sw/bin/brightnessctl -q -n s +10%";
+		brightness_up_key = "F4";
+		hide_version_string = false;
+	};
 
     # NETWORK =--------------------------=
 
