@@ -33,11 +33,9 @@
     services.displayManager.ly.enable = true;
 	services.displayManager.ly.settings = {
 		battery_id = "BAT1";
-		brightness_down_cmd = "/run/current-system/sw/bin/brightnessctl -q -n s 10%-";
-		brightness_down_key = "F3";
-		brightness_up_cmd = "/run/current-system/sw/bin/brightnessctl -q -n s +10%";
-		brightness_up_key = "F4";
-		hide_version_string = false;
+		brightness_down_key = null;
+		brightness_up_key = null;
+		hide_version_string = true;
 	};
 
     # NETWORK =--------------------------=
