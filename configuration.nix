@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ly-settgins";
+    system.nixos.label = "networkmanager-fixes";
     # =======================
 
     imports =
@@ -41,6 +41,7 @@
     # NETWORK =--------------------------=
 
     networking.networkmanager.enable = true;
+	networking.networkmanager.wifi.powersave = false;
 
     time.timeZone = "America/Mexico_City";
 
