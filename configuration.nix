@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "lua-rocks-deleted";
+    system.nixos.label = "luarocks-reinstalled";
     # ======================
 
     imports =

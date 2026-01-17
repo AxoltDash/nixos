@@ -38,10 +38,11 @@
 
     # LUA =------------------------------------=
 	# luarocks # neovim plugins
-	# lua51Packages.luarocks # 5.1 version
-    lua
+	lua51Packages.luarocks # 5.1 version
+	lua51Packages.lua
+    # lua
     lua-language-server
-    # lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
+    lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
 
     # LATEX =--------------------------------=
 	texlive.combined.scheme-full 
