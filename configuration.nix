@@ -9,8 +9,8 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "networkmanager-fixes";
-    # =======================
+    system.nixos.label = "lua-rocks-deleted";
+    # ======================
 
     imports =
         [
