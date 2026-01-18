@@ -1,21 +1,14 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-    # 🔥 Habilitar el driver AMDGPU (gráficos integrados)
+	# VIDEO DRIVERS =-------------------------=
+
     hardware = {
         graphics = {
             enable = true;
             enable32Bit = true;
-            # extraPackages = with pkgs; [ amdvlk ];
-			# extraPackages32 = with pkgs; [ driversi686Linux.amdvlk ];
         };
-        # amdgpu.amdvlk = {
-        #     enable = true;
-        #     support32Bit.enable = true;
-        # };
     };
-
-    # 🖥️ Mesa y Vulkan para mejor compatibilidad gráfica
     environment.systemPackages = with pkgs; [
         mesa  # Drivers OpenGL/Vulkan
         mesa.opencl
@@ -23,15 +16,14 @@
         vulkan-tools  # Herramientas Vulkan
         vulkan-validation-layers
     ];
-    
-    # 💻 Cpu
-    # hardware.cpu.amd.updateMicrocode = true;
+    services.xserver.videoDrivers = [ "amdgpu" ];
 
-    # 🔋 Manejo de bateria
+
+    # BATTERY =---------------------------=
+
     powerManagement.enable = true;
     services.tlp.enable = true;
 
-    services.xserver.videoDrivers = [ "amdgpu" ];
 
     # BLUETOOTH =-------------------------=
 
