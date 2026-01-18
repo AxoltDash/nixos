@@ -19,10 +19,22 @@
     services.xserver.videoDrivers = [ "amdgpu" ];
 
 
-    # BATTERY =---------------------------=
+    # POWER MANAGEMENT =---------------------------=
 
     powerManagement.enable = true;
-    services.tlp.enable = true;
+	services.tlp = {
+		enable = true;
+		settings = {
+			# Disbale power management for WiFi
+			WIFI_PWR_ON_AC = "off";
+			WIFI_PWR_ON_BAT = "off";
+			# Disable power management for PCIe (only my for my laptop)
+			RUNTIME_PM_ON_AC = "auto";
+			RUNTIME_PM_ON_BAT = "auto";
+			# Exclude WiFi Hardware from power management
+			RUNTIME_PM_DRIVER_DENYLIST = "rtw88_8821ce rtw_8821ce";
+		};
+	};
 
 
     # BLUETOOTH =-------------------------=
@@ -91,6 +103,8 @@
         extraModulePackages = with config.boot.kernelPackages; [ xpadneo ];
         extraModprobeConfig = ''
             options bluetooth disable_ertm=Y
+			options rtw88_8821ce disable_msi=1
+			options rtw_8821ce ant_sel=2
         '';
         # connect xbox controller
     };
