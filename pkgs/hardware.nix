@@ -12,8 +12,8 @@
     environment.systemPackages = with pkgs; [
         mesa  # Drivers OpenGL/Vulkan
         mesa.opencl
-        mesa-demos  # Herramientas para probar OpenGL
-        vulkan-tools  # Herramientas Vulkan
+        mesa-demos  # OpenGL
+        vulkan-tools  # Vulkan
         vulkan-validation-layers
     ];
     services.xserver.videoDrivers = [ "amdgpu" ];
