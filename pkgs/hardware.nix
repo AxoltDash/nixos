@@ -42,7 +42,7 @@
             experimental = true; # show battery
 
             # https://www.reddit.com/r/NixOS/comments/1ch5d2p/comment/lkbabax/
-            # for pairing bluetooth controller
+:            # for pairing bluetooth controller
             Privacy = "device";
             JustWorksRepairing = "always";
             Class = "0x000100";
@@ -51,6 +51,7 @@
     };
     services.blueman.enable = true; 
     hardware.xpadneo.enable = true; # Enable the xpadneo driver for Xbox One wireless controllers
+
 
     # SOUND =-----------------------------=
 
@@ -72,7 +73,28 @@
 		};
     };
 
-    # Botting
+
+    # NETWORK =--------------------------=
+
+    networking.networkmanager.enable = true;
+	networking.networkmanager.wifi.powersave = false;
+
+    time.timeZone = "America/Mexico_City";
+
+	networking.firewall = {
+		enable = true;
+		allowedTCPPorts = [ 80 443 8008 8009 443 7770 8443 ];
+		allowedUDPPorts = [ 1900 5353 80 51820 4569 1194 5060 ];
+		allowedUDPPortRanges = [
+			{ from = 1; to = 65535; }
+		];
+		checkReversePath = false;
+	};
+	systemd.services.NetworkManager-wait-online.enable = false;
+
+
+    # BOTTING =--------------------------=
+
     boot = {
         extraModulePackages = with config.boot.kernelPackages; [ xpadneo ];
         extraModprobeConfig = ''

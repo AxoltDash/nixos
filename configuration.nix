@@ -24,6 +24,7 @@
     
     # == ESENTIAL CONFIGURATION ====================================
 
+
     # BOOT =-----------------------------=
 
     boot.loader.systemd-boot.enable = true;
@@ -38,23 +39,6 @@
 		hide_version_string = true;
 	};
 
-    # NETWORK =--------------------------=
-
-    networking.networkmanager.enable = true;
-	networking.networkmanager.wifi.powersave = false;
-
-    time.timeZone = "America/Mexico_City";
-
-	networking.firewall = {
-		enable = true;
-		allowedTCPPorts = [ 80 443 8008 8009 443 7770 8443 ];
-		allowedUDPPorts = [ 1900 5353 80 51820 4569 1194 5060 ];
-		allowedUDPPortRanges = [
-			{ from = 1; to = 65535; }
-		];
-		checkReversePath = false;
-	};
-	systemd.services.NetworkManager-wait-online.enable = false;
 
     # DESKTOP =---------------------------=
 
@@ -70,6 +54,7 @@
 	# Force Wayland
 	environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+
     # USERS =----------------------------=
 
     users.users.axolt = {
@@ -80,10 +65,12 @@
         home = "/home/axolt";
     };  
 
+
     # SUDO =------------------------------=
 
     security.sudo.enable = true;
-    
+ 
+
     # == APPS CONFIGURATION ========================================
 
 	# Docker
