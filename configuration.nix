@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "luarocks-reinstalled";
+    system.nixos.label = "stable";
     # ======================
 
     imports =
