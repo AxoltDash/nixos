@@ -57,9 +57,9 @@
 		wireplumber.enable = true;
 		wireplumber.extraConfig.bluetoothEnhancements = {
 			"monitor.bluez.properties" = {
-				"bluez5.enable-sbc-xq" = true;		# mejor calidad que SBC
-				"bluez5.enable-msbc" = true;     	# mejor calidad en llamadas
-				"bluez5.enable-hw-volume" = true;	# control de volumen nativo
+				"bluez5.enable-sbc-xq" = true;		# best cuallity SBC
+				"bluez5.enable-msbc" = true;     	# best calls
+				"bluez5.enable-hw-volume" = true;	# native volume
 				"bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
 			};
 		};
