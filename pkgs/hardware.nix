@@ -38,9 +38,9 @@
 
 	services.upower = {
 		enable = true;
-		percentageLow = 20;
-		percentageCritical = 10;
-		percentageAction = 5;
+		percentageLow = 15;
+		percentageCritical = 8;
+		percentageAction = 3;
 		criticalPowerAction = "PowerOff";  # Solo apagar cuando llegue a 5%
 	};
 
