@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Upower";
+    system.nixos.label = "deletedPKGS";
     # ======================
 
     imports =
