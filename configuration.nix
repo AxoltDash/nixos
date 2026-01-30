@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "deletedPKGS";
+    system.nixos.label = "ssh_defaultsdisabled";
     # ======================
 
     imports =
