@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "ssh_defaultsdisabled";
+    system.nixos.label = "rocq";
     # ======================
 
     imports =

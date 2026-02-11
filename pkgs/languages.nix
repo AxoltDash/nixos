@@ -51,6 +51,9 @@
 	typst
 	tinymist
 	websocat
+
+	# Coq == ROCQ
+	rocq-core
   ];
   nixpkgs.config.allowUnfree = true;
 }
