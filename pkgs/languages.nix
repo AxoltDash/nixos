@@ -54,6 +54,7 @@
 
 	# Coq == ROCQ
 	rocq-core
+	coq
   ];
   nixpkgs.config.allowUnfree = true;
 }
