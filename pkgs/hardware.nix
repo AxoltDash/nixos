@@ -76,30 +76,30 @@
         pulse.enable = true;
         jack.enable = true;
 		wireplumber.enable = true;
+		wireplumber.enable = true;
 		wireplumber.extraConfig.bluetoothEnhancements = {
 			"monitor.bluez.properties" = {
-# Mejor calidad SBC (códec base)
 				"bluez5.enable-sbc-xq" = true;
-
-# Control de volumen nativo
 				"bluez5.enable-hw-volume" = true;
-
-# Códecs de alta calidad (si tus audífonos los soportan)
-				"bluez5.enable-ldac" = true;      # LDAC (Sony) - excelente calidad
-					"bluez5.enable-aac" = true;       # AAC (Apple) - buena calidad
-
-# FUERZA SOLO MODO A2DP (alta calidad, sin micrófono)
-					"bluez5.headset-roles" = [ ];     # Lista vacía = deshabilita HSP/HFP
-					"bluez5.autoswitch-profile" = false;  # No cambies de perfil automáticamente
+				"bluez5.enable-ldac" = true;
+				"bluez5.enable-aac" = true;
+				"bluez5.headset-roles" = [ ];
+				"bluez5.autoswitch-profile" = false;
 			};
 		};
-		wireplumber.extraConfig.bluetoothEnhancements = {
-			"monitor.bluez.properties" = {
-				"bluez5.enable-sbc-xq" = true;		# best cuallity SBC
-				"bluez5.enable-msbc" = true;     	# best calls
-				"bluez5.enable-hw-volume" = true;	# native volume
-				"bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
-			};
+		wireplumber.extraConfig.forceA2DP = {
+			"monitor.bluez.rules" = [
+			{
+				matches = [
+				{ "device.name" = "~bluez_card.*"; }
+				];
+				actions = {
+					update-props = {
+						"bluez5.auto-connect" = [ "a2dp_sink" ];
+					};
+				};
+			}
+			];
 		};
     };
 
