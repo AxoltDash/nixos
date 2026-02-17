@@ -76,7 +76,6 @@
         pulse.enable = true;
         jack.enable = true;
 		wireplumber.enable = true;
-		wireplumber.enable = true;
 		wireplumber.extraConfig.bluetoothEnhancements = {
 			"monitor.bluez.properties" = {
 				"bluez5.enable-sbc-xq" = true;
