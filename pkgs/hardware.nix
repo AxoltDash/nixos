@@ -51,19 +51,14 @@
         enable = true;
         powerOnBoot = true;
         settings.General = {
-            # experimental = true; # show battery
-
-            # https://www.reddit.com/r/NixOS/comments/1ch5d2p/comment/lkbabax/
-            # for pairing bluetooth controller
             Privacy = "device";
             JustWorksRepairing = "always";
-            # Class = "0x000100";
             FastConnectable = true;
-			COntrollerMode = "dual";
+			ControllerMode = "dual";
         };
     };
     services.blueman.enable = true; 
-    hardware.xpadneo.enable = true; # Enable the xpadneo driver for Xbox One wireless controllers
+    hardware.xpadneo.enable = true; # Enable the xpadneo driver for Xbox One wireless controller
 
 
     # SOUND =-----------------------------=
@@ -76,6 +71,7 @@
         pulse.enable = true;
         jack.enable = true;
 		wireplumber.enable = true;
+		# config for better audio quality
 		wireplumber.extraConfig.bluetoothEnhancements = {
 			"monitor.bluez.properties" = {
 				"bluez5.enable-sbc-xq" = true;
