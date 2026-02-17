@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "rocq";
+    system.nixos.label = "bluethooth-config";
     # ======================
 
     imports =

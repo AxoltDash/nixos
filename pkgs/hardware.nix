@@ -51,14 +51,15 @@
         enable = true;
         powerOnBoot = true;
         settings.General = {
-            experimental = true; # show battery
+            # experimental = true; # show battery
 
             # https://www.reddit.com/r/NixOS/comments/1ch5d2p/comment/lkbabax/
             # for pairing bluetooth controller
             Privacy = "device";
             JustWorksRepairing = "always";
-            Class = "0x000100";
+            # Class = "0x000100";
             FastConnectable = true;
+			COntrollerMode = "dual";
         };
     };
     services.blueman.enable = true; 
@@ -75,6 +76,23 @@
         pulse.enable = true;
         jack.enable = true;
 		wireplumber.enable = true;
+		wireplumber.extraConfig.bluetoothEnhancements = {
+			"monitor.bluez.properties" = {
+# Mejor calidad SBC (códec base)
+				"bluez5.enable-sbc-xq" = true;
+
+# Control de volumen nativo
+				"bluez5.enable-hw-volume" = true;
+
+# Códecs de alta calidad (si tus audífonos los soportan)
+				"bluez5.enable-ldac" = true;      # LDAC (Sony) - excelente calidad
+					"bluez5.enable-aac" = true;       # AAC (Apple) - buena calidad
+
+# FUERZA SOLO MODO A2DP (alta calidad, sin micrófono)
+					"bluez5.headset-roles" = [ ];     # Lista vacía = deshabilita HSP/HFP
+					"bluez5.autoswitch-profile" = false;  # No cambies de perfil automáticamente
+			};
+		};
 		wireplumber.extraConfig.bluetoothEnhancements = {
 			"monitor.bluez.properties" = {
 				"bluez5.enable-sbc-xq" = true;		# best cuallity SBC
