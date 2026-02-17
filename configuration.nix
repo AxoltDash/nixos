@@ -109,14 +109,6 @@
 		monocraft
     ];
 
-
-    # USB Arduino
-    services.udev.extraRules = ''
-        # Permisos para dispositivos seriales (Arduino, ESP, etc.)
-        KERNEL=="ttyUSB[0-9]*", MODE="0666"
-        KERNEL=="ttyACM[0-9]*", MODE="0666"
-    '';
-
     # Flatpak
     services.flatpak.enable = true;
     systemd.services.flatpak-repo = {

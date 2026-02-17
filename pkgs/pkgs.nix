@@ -80,7 +80,6 @@
     krita
 
     # Etc
-    arduino-ide
 	gnome-clocks
 
     # TERMINAL =--------------------------------=
