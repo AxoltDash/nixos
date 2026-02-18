@@ -44,7 +44,6 @@
     # CODING =----------------------------------=
     neovim
     nano
-    lazygit
     gh # github cli
     vscode
 
@@ -52,6 +51,7 @@
     # Terminal
     kitty
 	cool-retro-term
+    lazygit
 
     # Browsers
     brave
