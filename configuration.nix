@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "bluethooth-config";
+    system.nixos.label = "impala_and_bluetui";
     # ======================
 
     imports =

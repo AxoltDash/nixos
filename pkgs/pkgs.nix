@@ -52,6 +52,8 @@
     kitty
 	cool-retro-term
     lazygit
+	impala
+	bluetui
 
     # Browsers
     brave
