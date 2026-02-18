@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "impala_and_bluetui";
+    system.nixos.label = "nsxiv-Xresources";
     # ======================
 
     imports =

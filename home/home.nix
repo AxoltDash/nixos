@@ -18,7 +18,9 @@
     # The home.packages option allows you to install Nix packages into your
     # environment.
     home.packages = with pkgs; [
-		zsh-powerlevel10k
+		zsh-powerlevel10k	#pwl10k
+		xorg.xrdb			#xorg themes resources
+
 		# inputs.zen-browser.packages."${system}".default
 
         # # Adds the 'hello' command to your environment. It prints a friendly
