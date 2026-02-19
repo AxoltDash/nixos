@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "nsxiv-Xresources";
+    system.nixos.label = "casting-firewall";
     # ======================
 
     imports =

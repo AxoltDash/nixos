@@ -108,13 +108,19 @@
 
 	networking.firewall = {
 		enable = true;
-		allowedTCPPorts = [ 80 443 8008 8009 443 7770 8443 ];
-		allowedUDPPorts = [ 1900 5353 80 51820 4569 1194 5060 ];
-		allowedUDPPortRanges = [
-			{ from = 1; to = 65535; }
-		];
+		trustedInterfaces = [ "wlp2s0" ]; # Confía en todo el tráfico local WiFi
+		allowedUDPPorts = [ 51820 ]; # Solo WireGuard, que sí necesita estar abierto externamente
 		checkReversePath = false;
 	};
+	# networking.firewall = {
+	# 	enable = true;
+	# 	allowedTCPPorts = [ 80 443 8008 8009 443 7770 8443 ];
+	# 	allowedUDPPorts = [ 1900 5353 80 51820 4569 1194 5060 ];
+	# 	allowedUDPPortRanges = [
+	# 		{ from = 1; to = 65535; }
+	# 	];
+	# 	checkReversePath = false;
+	# };
 	systemd.services.NetworkManager-wait-online.enable = false;
 
 
