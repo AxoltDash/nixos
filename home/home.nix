@@ -134,34 +134,43 @@
 		enable = true;
 		enableCompletion = true;
 		autosuggestion.enable = true;
-		syntaxHighlighting.enable = true;
+		syntaxHighlighting.enable = false;
 		
 		oh-my-zsh = {
 			enable = true;
 			plugins = [
-				"git"
-				"sudo"
 				"extract"
 				"colored-man-pages"
-				"web-search"
 			];
 		};
 
 		initContent = ''
+
+			# Powerlevel10k lazy load
+			if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+				source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+			fi
 			source ~/.p10k.zsh
 			zstyle ':completion:*' matcher-list 'r:|=l'
 			export PATH="$HOME/.cargo/bin:$PATH"
 		''; 
 	
 		plugins = [
-			{name = "powerlevel10k";src = pkgs.zsh-powerlevel10k;file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";}
+			{
+				name = "powerlevel10k";
+				src = pkgs.zsh-powerlevel10k;
+				file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+			}
+			{
+				name = "fast-syntax-highlighting";
+				src = pkgs.zsh-fast-syntax-highlighting;
+				file = "share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh";
+			}
 		];
 
 		shellAliases = {
 			update = "sudo nixos-rebuild switch --flake ~/nixos";
 			update-flake = "nix flake update --flake ~/nixos";
-			connect = "ssh -i ~/.ssh/dash-server axolt@192.168.101.200";
-			connect-power = "bash ~/nixos/scripts/server.sh";
 		};
 	};
 

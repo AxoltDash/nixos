@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "casting-firewall";
+    system.nixos.label = "zsh-optimizations";
     # ======================
 
     imports =
