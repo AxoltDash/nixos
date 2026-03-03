@@ -134,15 +134,15 @@
 		enable = true;
 		enableCompletion = true;
 		autosuggestion.enable = true;
-		syntaxHighlighting.enable = false;
+		syntaxHighlighting.enable = true;
 		
-		oh-my-zsh = {
-			enable = true;
-			plugins = [
-				"extract"
-				"colored-man-pages"
-			];
-		};
+		# oh-my-zsh = {
+		# 	enable = true;
+		# 	plugins = [
+		# 		"extract"
+		# 		"colored-man-pages"
+		# 	];
+		# };
 
 		initContent = ''
 
@@ -160,11 +160,6 @@
 				name = "powerlevel10k";
 				src = pkgs.zsh-powerlevel10k;
 				file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-			}
-			{
-				name = "fast-syntax-highlighting";
-				src = pkgs.zsh-fast-syntax-highlighting;
-				file = "share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh";
 			}
 		];
 
