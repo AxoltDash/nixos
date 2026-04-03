@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "zsh-optimizations";
+    system.nixos.label = "Unstable-Branch";
     # ======================
 
     imports =
