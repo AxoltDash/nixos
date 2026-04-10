@@ -11,7 +11,8 @@
     
     # PYTHON =---------------------------------=
     python3
-	(python3.withPackages (ps: [ ps.pynvim ]))
+	python313Packages.pynvim
+	python313Packages.pynvim-pp
     
     # C =--------------------------------------=
     gcc
