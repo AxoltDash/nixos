@@ -198,7 +198,13 @@
             package = pkgs.gruvbox-gtk-theme;
             name = "Gruvbox-Dark";
         };
-        iconTheme = {
+		gtk4 = {
+			theme = {
+				package = pkgs.gruvbox-gtk-theme;
+				name = "Gruvbox-Dark";
+			};
+		};
+		iconTheme = {
             package = pkgs.gruvbox-material-gtk-theme;
             name = "Gruvbox-Material-Dark"; 
         };
