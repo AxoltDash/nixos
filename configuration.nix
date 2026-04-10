@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "Unstable-Branch-2";
+    system.nixos.label = "pynvim";
     # ======================
 
     imports =
