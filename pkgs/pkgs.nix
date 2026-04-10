@@ -42,7 +42,9 @@
     gst_all_1.gst-vaapi
 
     # CODING =----------------------------------=
-    neovim
+    # neovim
+	(neovim.override { withPython3 = true; })
+	(python3.withPackages (ps: [ ps.pynvim ]))
     nano
     gh # github cli
     vscode
