@@ -19,7 +19,7 @@
     # environment.
     home.packages = with pkgs; [
 		zsh-powerlevel10k	#pwl10k
-		xorg.xrdb			#xorg themes resources
+		xrdb				#xorg themes resources
 
 		# inputs.zen-browser.packages."${system}".default
 

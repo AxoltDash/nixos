@@ -119,7 +119,7 @@
 	dbeaver-bin
 
 	# PROTON =----------------------------------=
-	protonvpn-gui
+	protonvpn
 	mpi
 
     # MISC =------------------------------------=
