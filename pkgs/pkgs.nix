@@ -56,6 +56,7 @@
     lazygit
 	impala
 	bluetui
+	claude-code
 
     # Browsers
     brave

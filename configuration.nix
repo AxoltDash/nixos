@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "pynvim";
+    system.nixos.label = "claude";
     # ======================
 
     imports =
