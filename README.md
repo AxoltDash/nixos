@@ -15,13 +15,18 @@ git clone https://github.com/AxoltDash/nixos
 ### Flakes ❄️
 #### Rebuild the system 🔄
 ```shell
-sudo nixos-rebuild switch --flake nixos/
+update 
+
+# Equivalent to:
+# sudo nixos-rebuild switch --flake nixos/
 ```
 
-#### Update the system ⬆️
+#### Update the system (flakes) ⬆️
 ```shell
-sudo nix flake update nixos/
-sudo nixos-rebuild switch --flake nixos/
+update-flake
+
+# Equivalent to:
+# sudo nix flake update nixos/
 ```
 
 ## Attention ⚠️
