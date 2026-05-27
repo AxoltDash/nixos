@@ -29,14 +29,9 @@ This configuration is tailored to my personal needs and preferences. It may not 
 Read the instructions/ folder for more information on how to install another thing out of the NixOS configuration.
 
 ## To-Do List 📝
-- [ ] Add more configuration options from ./config folder, for example:
-  - [ ] Hyprland
-  - [ ] Waybar
-  - [ ] Rofi
-  - [ ] Kitty
-  - [ ] Neovim
-  - [ ] (AND MORE)
 - [ ] Modify the file order to make it easier to use in another computers, for example move touching config in another .nix file
+- [ ] Rewrite the `instructions/` folder and its configs
+- [ ] Add a custom script for configure personal data and not my data (example a global user git config and not mine)
 
 ## License 📜
 
