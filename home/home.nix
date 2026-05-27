@@ -209,10 +209,6 @@
             name = "Gruvbox-Material-Dark"; 
         };
 
-        #iconTheme = {
-        #  package = pkgs.gruvbox-plus-icons;
-        #  name = "Gruvbox-Plus-Dark"; 
-        #};
     };
 
     qt = {
