@@ -153,6 +153,15 @@
 			source ~/.p10k.zsh
 			zstyle ':completion:*' matcher-list 'r:|=l'
 			export PATH="$HOME/.cargo/bin:$PATH"
+
+
+			function y() {
+				local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+					command yazi "$@" --cwd-file="$tmp"
+					IFS= read -r -d "" cwd < "$tmp"
+					[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+					command rm -f -- "$tmp"
+			}
 		''; 
 	
 		plugins = [
