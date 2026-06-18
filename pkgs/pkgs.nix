@@ -140,6 +140,15 @@
     gnumake # manage non-source files to source
     xz # compression tool
 	wireguard-tools #VPN
+
+	# yazi extras:
+	ffmpeg
+	jq
+	poppler
+	fzf
+	zoxide
+	resvg
+	imagemagick
   ];
   nixpkgs.config.allowUnfree = true;
 }

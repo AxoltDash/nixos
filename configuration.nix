@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "yazi-rework";
+    system.nixos.label = "yazi-extras";
     # ======================
 
     imports =
