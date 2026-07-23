@@ -11,8 +11,8 @@
     
     # PYTHON =---------------------------------=
     python3
-	python313Packages.pynvim
-	python313Packages.pynvim-pp
+    python313Packages.pynvim
+    python313Packages.pynvim-pp
     
     # C =--------------------------------------=
     gcc
@@ -39,24 +39,24 @@
     julia
 
     # LUA =------------------------------------=
-	# luarocks # neovim plugins
-	lua51Packages.luarocks # 5.1 version
-	lua51Packages.lua
+    # luarocks # neovim plugins
+    lua51Packages.luarocks # 5.1 version
+    lua51Packages.lua
     # lua
     lua-language-server
     lua51Packages.tiktoken_core # Tokenizer for NVIM LUA
 
     # LATEX =--------------------------------=
-	texlive.combined.scheme-full 
+    texlive.combined.scheme-full 
 
-	# TYPST =--------------------------------=
-	typst
-	tinymist
-	websocat
+    # TYPST =--------------------------------=
+    typst
+    tinymist
+    websocat
 
-	# Coq == ROCQ
-	rocq-core
-	coq
+    # Coq == ROCQ
+    rocq-core
+    coq
   ];
   nixpkgs.config.allowUnfree = true;
 }

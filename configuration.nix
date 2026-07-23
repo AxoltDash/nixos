@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "yazi-extras";
+    system.nixos.label = "dolphin-retroarch";
     # ======================
 
     imports =

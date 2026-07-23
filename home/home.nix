@@ -190,8 +190,8 @@
 
     programs.ssh = {
         enable = true;
-		enableDefaultConfig = false;
-        matchBlocks = {
+        enableDefaultConfig = false;
+        settings = {
             "github.com" = {
                 hostname = "github.com";
                 user = "git";

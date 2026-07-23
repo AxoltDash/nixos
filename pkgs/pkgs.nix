@@ -34,7 +34,7 @@
     # Screen
     grim
     slurp
-	tesseract
+    tesseract
 
     # Recording
     obs-studio
@@ -43,8 +43,8 @@
 
     # CODING =----------------------------------=
     # neovim
-	(neovim.override { withPython3 = true; })
-	(python3.withPackages (ps: [ ps.pynvim ]))
+    (neovim.override { withPython3 = true; })
+    (python3.withPackages (ps: [ ps.pynvim ]))
     nano
     gh # github cli
     vscode
@@ -52,22 +52,22 @@
     # APPS =------------------------------------=
     # Terminal
     kitty
-	cool-retro-term
+    cool-retro-term
     lazygit
-	impala
-	bluetui
-	claude-code
+    impala
+    bluetui
+    claude-code
 
     # Browsers
     brave
-	# firefox
+    # firefox
 
     # Files
-	nautilus
+    nautilus
     zathura
     libreoffice
-	vlc
-	kdePackages.okular
+    vlc
+    kdePackages.okular
     
     # Utilities
     qalculate-gtk
@@ -85,13 +85,13 @@
     krita
 
     # Etc
-	gnome-clocks
+    gnome-clocks
 
     # TERMINAL =--------------------------------=
     peaclock
-	(yazi.override {
-	 _7zz = _7zz-rar;  # Support for RAR extraction
-	 })
+    (yazi.override {
+    _7zz = _7zz-rar;  # Support for RAR extraction
+    })
 
     # IMAGES & VIDEOS =-------------------------=
     ytdownloader
@@ -103,12 +103,11 @@
     steam
     steam-run
     steam-unwrapped
-		# dolphin-emu
-
-    # GAMES =-----------------------------------=
+		dolphin-emu
+    (retroarch.withCores (cores: with cores; [ fbneo ]))
     _2048-in-terminal
     prismlauncher
-	tetris
+    tetris
     
     # SERVICES =--------------------------------=
     zip
