@@ -46,7 +46,6 @@
     (neovim.override { withPython3 = true; })
     (python3.withPackages (ps: [ ps.pynvim ]))
     nano
-    gh # github cli
     vscode
 
     # APPS =------------------------------------=
@@ -94,7 +93,6 @@
     })
 
     # IMAGES & VIDEOS =-------------------------=
-    ytdownloader
     nsxiv
 
     # GAMING =----------------------------------=
@@ -104,7 +102,6 @@
     steam-run
     steam-unwrapped
 		dolphin-emu
-    (retroarch.withCores (cores: with cores; [ fbneo ]))
     _2048-in-terminal
     prismlauncher
     tetris
@@ -120,11 +117,9 @@
     blueman
 
     # SCHOOL =----------------------------------=
-	dbeaver-bin
 
 	# PROTON =----------------------------------=
 	# protonvpn
-	mpi
 
     # MISC =------------------------------------=
     cava

@@ -3,12 +3,6 @@
 {
   # PROGRAMS ====================================
   environment.systemPackages = with pkgs; [
-    # HASKELL =--------------------------------=
-    ghc
-    haskell-language-server
-    # Libraries
-    cabal-install
-    
     # PYTHON =---------------------------------=
     python3
     python313Packages.pynvim
@@ -53,10 +47,6 @@
     typst
     tinymist
     websocat
-
-    # Coq == ROCQ
-    rocq-core
-    coq
   ];
   nixpkgs.config.allowUnfree = true;
 }

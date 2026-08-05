@@ -9,7 +9,7 @@
     # CHAGE LABEL! #
     ################
     # =======================
-    system.nixos.label = "dolphin-retroarch";
+    system.nixos.label = "REMOVE-PKGS";
     # ======================
 
     imports =
