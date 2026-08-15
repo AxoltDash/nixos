@@ -53,8 +53,6 @@
     kitty
     cool-retro-term
     lazygit
-    impala
-    bluetui
     claude-code
 
     # Browsers
@@ -118,8 +116,8 @@
 
     # SCHOOL =----------------------------------=
 
-	# PROTON =----------------------------------=
-	# protonvpn
+    # PROTON =----------------------------------=
+    # protonvpn
 
     # MISC =------------------------------------=
     cava
@@ -133,16 +131,16 @@
     tree-sitter # Parser generator
     gnumake # manage non-source files to source
     xz # compression tool
-	wireguard-tools #VPN
+	  wireguard-tools #VPN
 
-	# yazi extras:
-	ffmpeg
-	jq
-	poppler
-	fzf
-	zoxide
-	resvg
-	imagemagick
+    # yazi extras:
+    ffmpeg
+    jq
+    poppler
+    fzf
+    zoxide
+    resvg
+    imagemagick
   ];
   nixpkgs.config.allowUnfree = true;
 }
