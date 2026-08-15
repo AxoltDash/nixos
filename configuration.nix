@@ -5,130 +5,130 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-    ################
-    # CHAGE LABEL! #
-    ################
-    # =======================
-    system.nixos.label = "REMOVE-PKGS";
-    # ======================
+################
+# CHAGE LABEL! #
+################
+# =======================
+  system.nixos.label = "REMOVE-PKGS";
+# ======================
 
-    imports =
-        [
-            ./nixos/hardware-configuration.nix 
-            ./pkgs/pkgs.nix
-            ./pkgs/hardware.nix 
-            ./pkgs/languages.nix
-        ];
-    
-    nix.settings.experimental-features = [ "nix-command" "flakes" ];
-    
-    # == ESENTIAL CONFIGURATION ====================================
-
-
-    # BOOT =-----------------------------=
-
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.timeout = 1;
-    boot.loader.efi.canTouchEfiVariables = true;
-    
-    services.displayManager.ly.enable = true;
-	services.displayManager.ly.settings = {
-		battery_id = "BAT1";
-		brightness_down_key = null;
-		brightness_up_key = null;
-		hide_version_string = true;
-	};
-
-
-    # DESKTOP =---------------------------=
-
-    programs.hyprland = {
-        enable = true;
-        xwayland.enable = true;
-    };
-    
-    # Interactions
-    xdg.portal.enable = true;
-    xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
-	# Force Wayland
-	environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-
-    # USERS =----------------------------=
-
-    users.users.axolt = {
-        isNormalUser = true;
-		#description = "Axolotl principal";
-        extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" ];
-        shell = pkgs.zsh;
-        home = "/home/axolt";
-    };  
-
-
-    # SUDO =------------------------------=
-
-    security.sudo.enable = true;
- 
-
-    # == APPS CONFIGURATION ========================================
-
-	# Docker
-	virtualisation.docker = {
-		enable = true;
-		enableOnBoot = false;
-	};
-     	
-    # File manager PCMANFM autoMounting
-    services.gvfs.enable = true;
-
-    # TouchScreen
-    services.libinput.enable = true;
-    
-    # Cup (Prints screens)
-    services.printing.enable = true;
-    
-    # Steam configuration
-    programs.steam = {
-        enable = true;
-        remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-        dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-        localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-        gamescopeSession.enable = true;
-    };
-    programs.gamemode.enable = true;
-
-    environment.sessionVariables = {
-        STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/axolt/.steam/root/compatibilitytools.d";
-    };
-
-    # Fonts 
-    fonts.packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
-        nerd-fonts.roboto-mono
-		monocraft
+  imports =
+    [
+    ./nixos/hardware-configuration.nix 
+      ./pkgs/pkgs.nix
+      ./pkgs/hardware.nix 
+      ./pkgs/languages.nix
     ];
 
-    # Flatpak
-    services.flatpak.enable = true;
-    systemd.services.flatpak-repo = {
-        wantedBy = [ "multi-user.target" ];
-        path = [ pkgs.flatpak ];
-        script = ''
-            flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-        '';
-    };
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-	# Enable ZSH
-	programs.zsh.enable = true;
+# == ESENTIAL CONFIGURATION ====================================
 
-	# Gnome Keyring
-	services.gnome.gnome-keyring.enable = true;
 
-    # PROGRAMS =--------------------------=
-    environment.systemPackages = with pkgs; [
-		# they are on pkgs.nix
-    ];
+# BOOT =-----------------------------=
 
-    system.stateVersion = "25.05"; # Did you read the comment?
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.timeout = 1;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  services.displayManager.ly.enable = true;
+  services.displayManager.ly.settings = {
+    battery_id = "BAT1";
+    brightness_down_key = null;
+    brightness_up_key = null;
+    hide_version_string = true;
+  };
+
+
+# DESKTOP =---------------------------=
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+# Interactions
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+# Force Wayland
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+
+# USERS =----------------------------=
+
+  users.users.axolt = {
+    isNormalUser = true;
+#description = "Axolotl principal";
+    extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" ];
+    shell = pkgs.zsh;
+    home = "/home/axolt";
+  };  
+
+
+# SUDO =------------------------------=
+
+  security.sudo.enable = true;
+
+
+# == APPS CONFIGURATION ========================================
+
+# Docker
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = false;
+  };
+
+# File manager PCMANFM autoMounting
+  services.gvfs.enable = true;
+
+# TouchScreen
+  services.libinput.enable = true;
+
+# Cup (Prints screens)
+  services.printing.enable = true;
+
+# Steam configuration
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+      gamescopeSession.enable = true;
+  };
+  programs.gamemode.enable = true;
+
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/axolt/.steam/root/compatibilitytools.d";
+  };
+
+# Fonts 
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+      nerd-fonts.roboto-mono
+      monocraft
+  ];
+
+# Flatpak
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      '';
+  };
+
+# Enable ZSH
+  programs.zsh.enable = true;
+
+# Gnome Keyring
+  services.gnome.gnome-keyring.enable = true;
+
+# PROGRAMS =--------------------------=
+  environment.systemPackages = with pkgs; [
+# they are on pkgs.nix
+  ];
+
+  system.stateVersion = "25.05"; # Did you read the comment?
 }
