@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "REMOVE-PKGS";
+  system.nixos.label = "GarbageC_and_Stable";
 # ======================
 
   imports =
@@ -53,7 +53,6 @@
 
 # Force Wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
 
 # USERS =----------------------------=
 
@@ -129,6 +128,16 @@
   environment.systemPackages = with pkgs; [
 # they are on pkgs.nix
   ];
+
+# NIX GARBAGE COLLECTOR
+
+  nix.settings.auto-optimise-store = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";
+  };
+  boot.loader.systemd-boot.configurationLimit = 10;
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
