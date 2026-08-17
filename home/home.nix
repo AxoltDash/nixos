@@ -155,6 +155,14 @@
 			export PATH="$HOME/.cargo/bin:$PATH"
 
 
+      # teclas para q funke ctrl + izq y ctr + delete
+			[[ -r /etc/zinputrc ]] && source /etc/zinputrc
+			bindkey '^[[1;5D' backward-word
+			bindkey '^[[1;5C' forward-word
+			bindkey '^H' backward-kill-word
+			bindkey '^[[3;5~' kill-word
+
+
 			function y() {
 				local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 					command yazi "$@" --cwd-file="$tmp"
