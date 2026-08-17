@@ -135,7 +135,7 @@
 		enableCompletion = true;
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
-		
+		defaultKeymap = "emacs";
 		# oh-my-zsh = {
 		# 	enable = true;
 		# 	plugins = [

@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "gc-alaise";
+  system.nixos.label = "vim_zsh_removed";
 # ======================
 
   imports =
