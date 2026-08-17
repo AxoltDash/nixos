@@ -175,6 +175,7 @@
 		shellAliases = {
 			update = "sudo nixos-rebuild switch --flake ~/nixos";
 			update-flake = "nix flake update --flake ~/nixos";
+      update-gc = "nix-env --delete-generations old --profile /home/axolt/.local/state/nix/profiles/home-manager && nix-env --delete-generations old --profile /home/axolt/.local/state/nix/profiles/profile && sudo sh -c 'nix-env --delete-generations old --profile /nix/var/nix/profiles/system && nix-collect-garbage -d'";
 		};
 	};
 

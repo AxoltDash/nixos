@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "GarbageC_and_Stable";
+  system.nixos.label = "gc-alaise";
 # ======================
 
   imports =
