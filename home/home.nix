@@ -211,6 +211,8 @@
           hostname = "10.10.220.248";
           user = "darsh";
           port = 1408;
+          identityFile = "~/.ssh/ifc-server";
+          identitiesOnly = true;
         };
       };
     };
