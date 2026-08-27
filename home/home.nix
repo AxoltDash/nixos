@@ -198,15 +198,21 @@
     };
 
     programs.ssh = {
-        enable = true;
-        enableDefaultConfig = false;
-        settings = {
-            "github.com" = {
-                hostname = "github.com";
-                user = "git";
-                identityFile = "~/.ssh/id_ed25519";
-            };
+      enable = true;
+      enableDefaultConfig = false;
+      settings = {
+        "github.com" = {
+          hostname = "github.com";
+          user = "git";
+          identityFile = "~/.ssh/id_ed25519";
         };
+
+        "sia" = {
+          hostname = "10.10.220.248";
+          user = "darsh";
+          port = 1408;
+        };
+      };
     };
 
     # THEMES =------------------------------------------------=
