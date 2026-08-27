@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "vim_zsh_removed";
+  system.nixos.label = "VM";
 # ======================
 
   imports =
@@ -59,7 +59,7 @@
   users.users.axolt = {
     isNormalUser = true;
 #description = "Axolotl principal";
-    extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" ];
+    extraGroups = [ "wheel" "networkmanager" "dialout" "uucp" "plugdev" "docker" "libvirtd" "kvm"];
     shell = pkgs.zsh;
     home = "/home/axolt";
   };  
@@ -123,6 +123,15 @@
 
 # Gnome Keyring
   services.gnome.gnome-keyring.enable = true;
+
+# VIRTUALIZATION
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu.swtpm.enable = true;   # TPM 2.0 for windows 11
+  };
+  programs.virt-manager.enable = true;
+  systemd.services.libvirtd.wantedBy = lib.mkForce [ ];
+  systemd.services.libvirt-guests.wantedBy = lib.mkForce [ ];
 
 # PROGRAMS =--------------------------=
   environment.systemPackages = with pkgs; [

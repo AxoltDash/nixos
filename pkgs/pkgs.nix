@@ -115,6 +115,8 @@
     blueman
 
     # SCHOOL =----------------------------------=
+    dnsmasq     # DHCP / DNS in the NAT "default" libvirt
+    virtio-win  # ISO drivers to witrio in windows
 
     # PROTON =----------------------------------=
     proton-vpn
