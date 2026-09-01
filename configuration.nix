@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "VM";
+  system.nixos.label = "fixssh";
 # ======================
 
   imports =

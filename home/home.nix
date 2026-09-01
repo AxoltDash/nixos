@@ -213,6 +213,8 @@
           port = 1408;
           identityFile = "~/.ssh/ifc-server";
           identitiesOnly = true;
+          IPQoS = "none";
+          ObscureKeystrokeTiming = "no";
         };
       };
     };
