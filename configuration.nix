@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "fixssh";
+  system.nixos.label = "atkinson-hyperlegible-next";
 # ======================
 
   imports =
@@ -104,8 +104,9 @@
 # Fonts 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
-      nerd-fonts.roboto-mono
-      monocraft
+    nerd-fonts.roboto-mono
+    monocraft
+    atkinson-hyperlegible-next
   ];
 
 # Flatpak
