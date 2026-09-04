@@ -211,10 +211,25 @@
           hostname = "10.10.220.248";
           user = "darsh";
           port = 1408;
-          identityFile = "~/.ssh/ifc-server";
           identitiesOnly = true;
           IPQoS = "none";
           ObscureKeystrokeTiming = "no";
+          identityFile = "~/.ssh/ifc-server";
+        };
+
+
+        "windows-vpn" = {
+          hostname = "192.168.122.49";
+          user = "darsh";
+          identityFile = "~/.ssh/ifc-server";
+        };
+
+        "sia-remoto" = {
+          hostname = "10.10.220.248";
+          user = "darsh";
+          port = 1408;
+          ProxyJump = "windows-vpn";
+          identityFile = "~/.ssh/ifc-server";
         };
       };
     };
