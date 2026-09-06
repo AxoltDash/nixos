@@ -184,6 +184,7 @@
 			update = "sudo nixos-rebuild switch --flake ~/nixos";
 			update-flake = "nix flake update --flake ~/nixos";
       update-gc = "nix-env --delete-generations old --profile /home/axolt/.local/state/nix/profiles/home-manager && nix-env --delete-generations old --profile /home/axolt/.local/state/nix/profiles/profile && sudo sh -c 'nix-env --delete-generations old --profile /nix/var/nix/profiles/system && nix-collect-garbage -d'";
+      dserver = "sudo ip addr add 10.10.220.248/32 dev lo ; ssh -L 10.10.220.248:4445:10.10.220.248:4445 sia-remoto";
 		};
 	};
 
