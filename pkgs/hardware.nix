@@ -104,7 +104,8 @@
     networking.networkmanager.enable = true;
 	networking.networkmanager.wifi.powersave = false;
 
-    time.timeZone = "America/Mexico_City";
+    time.timeZone = "America/Regina";
+    services.timesyncd.enable = true;
 
 	networking.firewall = {
 		enable = true;

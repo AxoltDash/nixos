@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "vm-ssh";
+  system.nixos.label = "time-zone";
 # ======================
 
   imports =

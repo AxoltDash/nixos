@@ -14,6 +14,7 @@
     tree
     btop 
     home-manager
+    tzdata
     
 
     # DESKTOP =---------------------------------=
