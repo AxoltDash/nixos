@@ -232,6 +232,11 @@
           ProxyJump = "windows-vpn";
           identityFile = "~/.ssh/ifc-server";
         };
+
+        "kali" = {
+          hostname = "192.168.122.193";
+          user = "axolt";
+        };
       };
     };
 
