@@ -9,7 +9,7 @@
 # CHAGE LABEL! #
 ################
 # =======================
-  system.nixos.label = "time-zone";
+  system.nixos.label = "hyprlock";
 # ======================
 
   imports =
@@ -53,6 +53,15 @@
 
 # Force Wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+# Hyprlock
+  security.pam.services.hyprlock = {};
+
+  services.logind.settings.Login = {
+    HandleLidSwitch = "suspend";
+    HandleLidSwitchDocked = "ignore";
+    HoldoffTimeoutSec = "5s";
+  };
 
 # USERS =----------------------------=
 

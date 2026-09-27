@@ -24,6 +24,8 @@
     wl-clipboard
     brightnessctl
     hyprshade
+    hyprlock
+    hypridle
 
     # Notifications
     dunst
