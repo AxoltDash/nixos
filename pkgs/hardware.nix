@@ -107,12 +107,39 @@
     time.timeZone = "America/Regina";
     services.timesyncd.enable = true;
 
-	networking.firewall = {
+	# Using firewalld instead of the simple nixos firewall so we can scope
+	# open ports to trusted home networks (zone "home") while any other
+	# network (public wifi, etc) stays fully locked down (zone "public").
+	# Connection -> zone binding is done per-SSID via NetworkManager
+	# (connection.zone), not in this file. See README/notes for the nmcli
+	# commands used to bind the home SSIDs to the "home" zone.
+	networking.firewall.enable = false;
+	networking.nftables.enable = true;
+	boot.kernel.sysctl."net.ipv4.conf.all.rp_filter" = 1; # loose reverse-path filtering (docker/libvirtd bridges)
+
+	services.firewalld = {
 		enable = true;
-    allowedUDPPorts = [ 5353 ];
-    allowedUDPPortRanges = [ { from = 32768; to = 61000; } ];
-    checkReversePath = "loose";
+		settings = {
+			DefaultZone = "public";
+			IPv6_rpfilter = "loose";
+		};
+		zones = {
+			# Any network not explicitly bound to "home" (public wifi, hotspots, etc):
+			# nothing inbound, packets dropped silently.
+			public = {
+				target = "DROP";
+			};
+			# Bound to the home SSIDs (Mochis-*/Midas-*) via `nmcli connection modify <SSID> connection.zone home`.
+			# Fully trusted, same as the old `trustedInterfaces = [ "wlp2s0" ]` behaviour
+			# (needed for Google Cast's stream, which chokes under the "public" zone's
+			# conntrack/DROP filtering), but now scoped to the verified home SSIDs instead
+			# of "any network using this wifi card".
+			home = {
+				target = "ACCEPT";
+			};
+		};
 	};
+
 	systemd.services.NetworkManager-wait-online.enable = false;
 
 
